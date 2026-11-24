@@ -1,0 +1,1923 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A'NuCare Wellness Center | Mental Health, Spravato® &amp; Wellness in Darlington, SC</title>
+  <meta name="description" content="A'NuCare Wellness Center, Inc. in Darlington, SC offers compassionate psychiatric care, medication management, counseling, EMDR, licensed Spravato® treatment, AAFE cosmetic aesthetics, and nurse coaching." />
+  <meta name="keywords" content="A'NuCare Wellness Center, Darlington SC psychiatrist, PMHNP Darlington SC, Spravato treatment South Carolina, EMDR counseling Darlington, Botox TMJ Darlington SC, Karen Fulwood DNP" />
+
+  <!-- Structured Data (LocalBusiness / MedicalClinic) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "A'NuCare Wellness Center, Inc.",
+    "url": "https://www.anucarewellness.com/",
+    "telephone": "+1-843-968-8120",
+    "faxNumber": "+1-843-968-8301",
+    "email": "anucarewellnesscenter@gmail.com",
+    "founder": [
+      { "@type": "Person", "name": "Karen Fulwood, DNP, PMHNP-BC, FNP-BC" },
+      { "@type": "Person", "name": "Rob Fulwood" }
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "110 Cherry St.",
+      "addressLocality": "Darlington",
+      "addressRegion": "SC",
+      "postalCode": "29532",
+      "addressCountry": "US"
+    },
+    "medicalSpecialty": ["Psychiatric", "MentalHealth", "CosmeticAesthetics"]
+  }
+  </script>
+
+  <!-- Google Fonts: Strictly Manrope & Cormorant Garamond -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN for responsive utilities -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            tealDeep: '#174F50',
+            tealMuted: '#79A7A0',
+            sageSoft: '#BECDB8',
+            ivoryWarm: '#F5F1E8',
+            skyLight: '#D6E7EC',
+            charcoal: '#303B3A'
+          },
+          fontFamily: {
+            sans: ['Manrope', 'sans-serif'],
+            serif: ['Cormorant Garamond', 'serif']
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    /* ==========================================================================
+       A'NUCARE WELLNESS CENTER — ORGANIC VISUAL-FIRST DESIGN SYSTEM
+       Palette: #174F50 | #79A7A0 | #BECDB8 | #F5F1E8 | #D6E7EC | #303B3A
+       Fonts: Manrope (Primary) & Cormorant Garamond (Editorial Accent)
+       ========================================================================== */
+    :root {
+      --teal-deep: #174F50;
+      --teal-muted: #79A7A0;
+      --sage-soft: #BECDB8;
+      --ivory-warm: #F5F1E8;
+      --sky-light: #D6E7EC;
+      --charcoal: #303B3A;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background-color: var(--ivory-warm);
+      color: var(--charcoal);
+      font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 300;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      overflow-x: hidden;
+      background-color: var(--ivory-warm);
+    }
+
+    /* Typography Restraint */
+    h1, h2, h3, h4 {
+      font-family: 'Manrope', sans-serif;
+      font-weight: 300;
+      letter-spacing: -0.02em;
+    }
+
+    .editorial-accent {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-style: italic;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+    }
+
+    .editorial-serif {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-weight: 400;
+    }
+
+    /* Organic Image Masks — Eliminating Rigid Rectangular Boxes */
+    .mask-pebble {
+      border-radius: 56% 44% 62% 38% / 44% 58% 42% 56%;
+    }
+    .mask-arch {
+      border-radius: 260px 260px 36px 36px;
+    }
+    .mask-arch-soft {
+      border-radius: 180px 180px 60px 140px;
+    }
+    .mask-petal {
+      border-radius: 68% 32% 48% 52% / 58% 44% 56% 42%;
+    }
+    .mask-droplet {
+      border-radius: 42% 58% 46% 54% / 60% 38% 62% 40%;
+    }
+    .mask-pill-vertical {
+      border-radius: 999px;
+    }
+    .mask-horizon {
+      border-radius: 40px 180px 40px 180px;
+    }
+
+    /* Fluid Background Gradients & Soft Atmospheric Washes */
+    .wash-ivory-to-sky {
+      background: linear-gradient(180deg, #F5F1E8 0%, #E7EFF0 48%, #D6E7EC 100%);
+    }
+    .wash-sky-to-ivory {
+      background: linear-gradient(180deg, #D6E7EC 0%, #E8EFEA 55%, #F5F1E8 100%);
+    }
+    .wash-ivory-to-sage {
+      background: linear-gradient(180deg, #F5F1E8 0%, #DFE5D9 52%, #BECDB8 100%);
+    }
+    .wash-sage-to-ivory {
+      background: linear-gradient(180deg, #BECDB8 0%, #DCE3D7 55%, #F5F1E8 100%);
+    }
+    .wash-deep-organic {
+      background: radial-gradient(circle at 18% 22%, #236869 0%, #174F50 58%, #103A3B 100%);
+    }
+    .radial-glow-sky {
+      background: radial-gradient(ellipse at 70% 30%, rgba(214, 231, 236, 0.85) 0%, rgba(245, 241, 232, 0) 68%);
+    }
+    .radial-glow-sage {
+      background: radial-gradient(ellipse at 25% 50%, rgba(190, 205, 184, 0.55) 0%, rgba(245, 241, 232, 0) 70%);
+    }
+
+    /* Subtle Organic Animations */
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-10px) rotate(1deg); }
+    }
+    @keyframes morphSoft {
+      0%, 100% { border-radius: 56% 44% 62% 38% / 44% 58% 42% 56%; }
+      50% { border-radius: 48% 52% 52% 48% / 54% 46% 54% 46%; }
+    }
+    .animate-float-slow {
+      animation: floatSlow 9s ease-in-out infinite;
+    }
+    .animate-morph {
+      animation: morphSoft 14s ease-in-out infinite;
+    }
+
+    /* Scroll Reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity 0.85s cubic-bezier(0.22, 1, 0.36, 1), transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Image Soft Zoom on Hover */
+    .img-zoom {
+      transition: transform 1.1s cubic-bezier(0.22, 1, 0.36, 1), filter 0.6s ease;
+    }
+    .group:hover .img-zoom {
+      transform: scale(1.045);
+    }
+
+    /* Navigation Pill Glass */
+    .nav-shell {
+      background: rgba(245, 241, 232, 0.82);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(23, 79, 80, 0.08);
+    }
+
+    /* Interactive Focus States for Accessibility */
+    a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+      outline: 2px solid #174F50;
+      outline-offset: 3px;
+    }
+
+    /* Reduced Motion Accessibility */
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .animate-float-slow, .animate-morph { animation: none; }
+      .reveal { opacity: 1; transform: none; transition: none; }
+      .img-zoom { transition: none; }
+    }
+
+    /* Page Switching */
+    .page-view {
+      display: none;
+      opacity: 0;
+      transition: opacity 0.45s ease;
+    }
+    .page-view.active {
+      display: block;
+      opacity: 1;
+    }
+
+    /* Organic Underline Link */
+    .organic-link {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .organic-link::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      width: 100%;
+      height: 1px;
+      background-color: currentColor;
+      transform: scaleX(0.35);
+      transform-origin: left;
+      transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+      opacity: 0.65;
+    }
+    .organic-link:hover::after {
+      transform: scaleX(1);
+      opacity: 1;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #F5F1E8; }
+    ::-webkit-scrollbar-thumb { background: #BECDB8; border-radius: 99px; }
+    ::-webkit-scrollbar-thumb:hover { background: #79A7A0; }
+  </style>
+</head>
+<body class="bg-ivoryWarm text-charcoal selection:bg-sageSoft selection:text-tealDeep">
+
+  <!-- Skip to Main Content for Screen Readers & Keyboard Users -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-tealDeep focus:text-ivoryWarm focus:px-5 focus:py-2.5 focus:rounded-full text-sm">
+    Skip to main content
+  </a>
+
+  <!-- Subtle Crisis & Safety Top Ribbon -->
+  <div class="bg-tealDeep text-ivoryWarm/90 text-xs py-2 px-4 sm:px-8 flex flex-wrap items-center justify-between gap-2" role="region" aria-label="Emergency and clinic notice">
+    <p class="font-light tracking-wide">
+      Darlington, SC &middot; <a href="tel:+18439688120" class="underline decoration-tealMuted/60 hover:text-skyLight transition">843-968-8120</a>
+    </p>
+    <p class="font-light text-ivoryWarm/85">
+      Not an emergency service. Call <strong class="font-medium text-ivoryWarm">911</strong> for emergencies or <a href="https://988lifeline.org/" target="_blank" rel="noopener noreferrer" class="underline decoration-sageSoft hover:text-skyLight font-medium transition">988 Suicide &amp; Crisis Lifeline</a>.
+    </p>
+  </div>
+
+  <!-- ========================================================================
+       CREATIVE FLOATING ORGANIC HEADER
+       ======================================================================== -->
+  <header class="sticky top-3 z-50 px-4 sm:px-6 lg:px-10 pt-3 transition-all duration-500" id="site-header">
+    <div class="max-w-7xl mx-auto nav-shell rounded-full px-4 sm:px-7 py-2.5 flex items-center justify-between shadow-[0_12px_36px_rgba(23,79,80,0.06)]">
+
+      <!-- Custom Organic Brand Emblem & Wordmark -->
+      <button onclick="navigateTo('home')" class="flex items-center gap-3 text-left group focus:outline-none" aria-label="A'NuCare Wellness Center Home">
+        <span class="w-10 h-10 rounded-full bg-tealDeep flex items-center justify-center shrink-0 transition-transform duration-500 group-hover:scale-105">
+          <svg viewBox="0 0 40 40" class="w-6 h-6 text-ivoryWarm" fill="none" aria-hidden="true">
+            <path d="M20 7C14 13 11 19 14 26C16.5 31 23.5 31 26 26C29 19 26 13 20 7Z" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+            <path d="M20 12V30" stroke="#BECDB8" stroke-width="1.2" stroke-linecap="round"/>
+            <path d="M20 20C23.5 18 26.5 18.5 29 16" stroke="#D6E7EC" stroke-width="1.2" stroke-linecap="round"/>
+            <path d="M20 23C16.5 21 13.5 21.5 11 19" stroke="#D6E7EC" stroke-width="1.2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="leading-tight">
+          <span class="block text-[15px] font-medium tracking-wide text-tealDeep">A'NuCare</span>
+          <span class="block text-[11px] uppercase tracking-[0.2em] text-charcoal/65">Wellness Center</span>
+        </span>
+      </button>
+
+      <!-- Desktop Navigation with Elegant Dropdown -->
+      <nav class="hidden lg:flex items-center gap-7 text-[14px] font-normal text-charcoal/85" aria-label="Primary navigation">
+        <!-- Care & Services Dropdown -->
+        <div class="relative group" id="services-dropdown">
+          <button class="flex items-center gap-1.5 py-2 hover:text-tealDeep transition" aria-expanded="false" aria-haspopup="true">
+            <span>Care &amp; Services</span>
+            <svg class="w-3.5 h-3.5 transition-transform duration-300 group-hover:rotate-180" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="absolute left-1/2 -translate-x-1/2 top-full pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-300 w-[340px]">
+            <div class="bg-ivoryWarm/95 backdrop-blur-xl rounded-[28px] p-4 shadow-[0_24px_60px_rgba(23,79,80,0.12)] border border-tealDeep/10 space-y-1">
+              <button onclick="navigateTo('mental-health')" class="w-full text-left px-4 py-3 rounded-[20px] hover:bg-skyLight/60 transition flex items-center justify-between group/item">
+                <span>
+                  <span class="block text-sm font-medium text-tealDeep">Mental Health &amp; Psychiatry</span>
+                  <span class="block text-xs text-charcoal/65">Assessments, medication, EMDR &amp; counseling</span>
+                </span>
+                <span class="text-tealMuted group-hover/item:translate-x-1 transition">&rarr;</span>
+              </button>
+              <button onclick="navigateTo('spravato')" class="w-full text-left px-4 py-3 rounded-[20px] hover:bg-skyLight/60 transition flex items-center justify-between group/item">
+                <span>
+                  <span class="block text-sm font-medium text-tealDeep">Spravato® Treatment</span>
+                  <span class="block text-xs text-charcoal/65">Licensed center for treatment-resistant depression</span>
+                </span>
+                <span class="text-tealMuted group-hover/item:translate-x-1 transition">&rarr;</span>
+              </button>
+              <button onclick="navigateTo('aesthetics')" class="w-full text-left px-4 py-3 rounded-[20px] hover:bg-sageSoft/45 transition flex items-center justify-between group/item">
+                <span>
+                  <span class="block text-sm font-medium text-tealDeep">Cosmetic Aesthetics</span>
+                  <span class="block text-xs text-charcoal/65">AAFE Botox &amp; TMJ injection appointments</span>
+                </span>
+                <span class="text-tealMuted group-hover/item:translate-x-1 transition">&rarr;</span>
+              </button>
+              <button onclick="navigateTo('wellness')" class="w-full text-left px-4 py-3 rounded-[20px] hover:bg-sageSoft/45 transition flex items-center justify-between group/item">
+                <span>
+                  <span class="block text-sm font-medium text-tealDeep">Nurse Coaching &amp; Wellness</span>
+                  <span class="block text-xs text-charcoal/65">Client-centered health goal support</span>
+                </span>
+                <span class="text-tealMuted group-hover/item:translate-x-1 transition">&rarr;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <button onclick="navigateTo('about')" class="py-2 hover:text-tealDeep transition nav-item" data-page="about">About</button>
+        <button onclick="navigateTo('resources')" class="py-2 hover:text-tealDeep transition nav-item" data-page="resources">Patient Resources</button>
+        <button onclick="navigateTo('shop')" class="py-2 hover:text-tealDeep transition nav-item" data-page="shop">Shop</button>
+        <button onclick="navigateTo('preceptorship')" class="py-2 hover:text-tealDeep transition nav-item" data-page="preceptorship">Preceptorship</button>
+        <button onclick="navigateTo('contact')" class="py-2 hover:text-tealDeep transition nav-item" data-page="contact">Visit &amp; Contact</button>
+      </nav>
+
+      <!-- Prominent Appointment Access + Mobile Toggle -->
+      <div class="flex items-center gap-3">
+        <button onclick="navigateTo('appointments')" class="bg-tealDeep text-ivoryWarm text-[13px] font-normal px-5 py-2.5 rounded-full hover:bg-charcoal transition shadow-[0_8px_20px_rgba(23,79,80,0.18)] flex items-center gap-2">
+          <span>Appointments</span>
+          <span class="w-1.5 h-1.5 rounded-full bg-sageSoft"></span>
+        </button>
+        <button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="lg:hidden w-10 h-10 rounded-full bg-sageSoft/35 flex items-center justify-center text-tealDeep" aria-label="Open navigation menu" aria-expanded="false">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+            <line x1="4" y1="8" x2="20" y2="8"/>
+            <line x1="4" y1="16" x2="16" y2="16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Organic Mobile Navigation Drawer -->
+    <div id="mobile-drawer" class="hidden lg:hidden mt-3 max-w-7xl mx-auto bg-ivoryWarm/98 backdrop-blur-2xl rounded-[32px] p-6 shadow-[0_24px_60px_rgba(23,79,80,0.14)] border border-tealDeep/10">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div class="space-y-2">
+          <p class="text-[11px] uppercase tracking-[0.2em] text-tealMuted mb-3">Clinical &amp; Wellness Care</p>
+          <button onclick="navigateTo('mental-health'); toggleMobileMenu(false)" class="block w-full text-left py-2 text-base text-tealDeep hover:translate-x-1 transition">Mental Health &amp; Psychiatry</button>
+          <button onclick="navigateTo('spravato'); toggleMobileMenu(false)" class="block w-full text-left py-2 text-base text-tealDeep hover:translate-x-1 transition">Spravato® Treatment</button>
+          <button onclick="navigateTo('aesthetics'); toggleMobileMenu(false)" class="block w-full text-left py-2 text-base text-tealDeep hover:translate-x-1 transition">Cosmetic Aesthetics</button>
+          <button onclick="navigateTo('wellness'); toggleMobileMenu(false)" class="block w-full text-left py-2 text-base text-tealDeep hover:translate-x-1 transition">Nurse Coaching &amp; Wellness</button>
+        </div>
+        <div class="space-y-2">
+          <p class="text-[11px] uppercase tracking-[0.2em] text-tealMuted mb-3">Explore A'NuCare</p>
+          <button onclick="navigateTo('about'); toggleMobileMenu(false)" class="block w-full text-left py-2 text-base text-charcoal hover:text-tealDeep transition">About Our Team</button>
+          <button onclick="navigateTo('resources'); toggleMobileMenu(false)" class="block w-full text-left py-2 text-base text-charcoal hover:text-tealDeep transition">Patient Resources &amp; Insurance</button>
+          <button onclick="navigateTo('shop'); toggleMobileMenu(false)" class="block w-full text-left py-2 text-base text-charcoal hover:text-tealDeep transition">Wellness Shop</button>
+          <button onclick="navigateTo('preceptorship'); toggleMobileMenu(false)" class="block w-full text-left py-2 text-base text-charcoal hover:text-tealDeep transition">Student Preceptorship</button>
+          <button onclick="navigateTo('contact'); toggleMobileMenu(false)" class="block w-full text-left py-2 text-base text-charcoal hover:text-tealDeep transition">Contact &amp; Visit Us</button>
+        </div>
+      </div>
+      <div class="mt-6 pt-5 border-t border-tealDeep/10 flex flex-wrap items-center justify-between gap-3">
+        <a href="tel:+18439688120" class="text-sm text-tealDeep font-medium">Call (843) 968-8120</a>
+        <button onclick="navigateTo('appointments'); toggleMobileMenu(false)" class="bg-tealDeep text-ivoryWarm px-5 py-2.5 rounded-full text-sm">Schedule Care</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       MAIN CONTENT CONTAINER (10+ DISTINCTIVE ORGANIC PAGES)
+       ======================================================================== -->
+  <main id="main-content" class="relative">
+
+    <!-- ======================================================================
+         PAGE 01: HOME (Visual-First, Asymmetrical, 14 Organic Sections)
+         ====================================================================== -->
+    <section id="page-home" class="page-view active" aria-label="Home">
+
+      <!-- 1. ASYMMETRICAL EDITORIAL HERO -->
+      <div class="relative pt-8 pb-20 lg:pt-14 lg:pb-28 overflow-hidden radial-glow-sky">
+        <!-- Ambient Organic Background Shape -->
+        <svg class="absolute -right-24 top-10 w-[520px] h-[520px] text-sageSoft/35 pointer-events-none animate-float-slow" viewBox="0 0 500 500" fill="currentColor" aria-hidden="true">
+          <path d="M405,317Q372,384,302,418Q232,452,155,414Q78,376,65,292Q52,208,108,140Q164,72,251,64Q338,56,396,125Q454,194,405,317Z"/>
+        </svg>
+
+        <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 relative z-10">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-6 items-center">
+
+            <!-- Left Editorial Copy (Restrained, Moderate Scale) -->
+            <div class="lg:col-span-5 lg:pr-6 order-2 lg:order-1">
+              <p class="text-xs uppercase tracking-[0.22em] text-tealMuted mb-4">Darlington, South Carolina</p>
+              <h1 class="text-3xl sm:text-4xl lg:text-[42px] leading-[1.18] text-tealDeep font-light">
+                Meeting you right where you are, <span class="editorial-accent text-[1.14em] text-charcoal">with whole-person care.</span>
+              </h1>
+              <p class="mt-5 text-[15px] leading-relaxed text-charcoal/80 max-w-md">
+                Compassionate psychiatric care, counseling, and licensed Spravato® therapy for all ages—alongside AAFE aesthetics and nurse coaching.
+              </p>
+              <div class="mt-8 flex flex-wrap items-center gap-4">
+                <button onclick="navigateTo('appointments')" class="bg-tealDeep text-ivoryWarm px-7 py-3.5 rounded-full text-sm hover:bg-charcoal transition shadow-[0_12px_28px_rgba(23,79,80,0.18)]">
+                  Schedule an Appointment
+                </button>
+                <a href="#find-right-care" class="organic-link text-sm text-tealDeep py-2">
+                  <span>Find the Right Care</span>
+                  <span aria-hidden="true">&darr;</span>
+                </a>
+              </div>
+
+              <!-- Quiet Trust Signals -->
+              <div class="mt-10 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-charcoal/65">
+                <span>Founded 2021</span>
+                <span class="w-1 h-1 rounded-full bg-tealMuted"></span>
+                <span>Licensed Spravato® Center</span>
+                <span class="w-1 h-1 rounded-full bg-tealMuted"></span>
+                <span>All Ages Welcome</span>
+              </div>
+            </div>
+
+            <!-- Right Asymmetrical Layered Photography Composition (Visual-First) -->
+            <div class="lg:col-span-7 order-1 lg:order-2 relative">
+              <div class="relative grid grid-cols-12 items-center">
+                <!-- Main Organic Arch Photograph -->
+                <div class="col-span-9 col-start-3 sm:col-span-8 sm:col-start-4 relative group">
+                  <div class="overflow-hidden mask-arch shadow-[0_28px_70px_rgba(23,79,80,0.12)] aspect-[4/5] bg-skyLight">
+                    <img
+                      src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1000&q=85"
+                      alt="Warm, calm woman smiling softly in sunlit natural environment representing human-centered mental wellness"
+                      class="w-full h-full object-cover img-zoom"
+                      loading="eager"
+                    />
+                  </div>
+                </div>
+
+                <!-- Overlapping Pebble Portrait (Conversation & Care) -->
+                <div class="col-span-6 sm:col-span-5 -mt-28 sm:-mt-44 relative z-20 group">
+                  <div class="overflow-hidden mask-pebble border-[6px] border-ivoryWarm shadow-[0_20px_50px_rgba(23,79,80,0.12)] aspect-square bg-sageSoft/40 animate-morph">
+                    <img
+                      src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?auto=format&fit=crop&w=700&q=85"
+                      alt="Supportive hands resting calmly during a compassionate therapeutic conversation"
+                      class="w-full h-full object-cover img-zoom"
+                      loading="eager"
+                    />
+                  </div>
+                </div>
+
+                <!-- Floating Botanical Detail Accent -->
+                <div class="hidden sm:block absolute -bottom-4 right-4 z-20 bg-ivoryWarm/90 backdrop-blur-md rounded-full px-5 py-3 shadow-[0_14px_34px_rgba(23,79,80,0.08)]">
+                  <p class="text-xs text-tealDeep font-medium">In-Person &amp; Telehealth</p>
+                  <p class="text-[11px] text-charcoal/65">Darlington &amp; South Carolina</p>
+                </div>
+              </div>
+              <p class="text-[11px] text-charcoal/45 text-right mt-3 pr-2">Editorial photography used to represent calm, patient-centered care.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Seamless Organic Wave Transition to Sky Wash -->
+      <svg class="w-full h-16 sm:h-24 text-skyLight/55 block -mb-1" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+        <path fill="currentColor" d="M0,64 C320,128 640,0 960,64 C1180,108 1340,84 1440,56 L1440,120 L0,120 Z"/>
+      </svg>
+
+      <!-- 2. THREE DISTINCT VISUAL SERVICE PATHWAYS (Non-Boxy, Asymmetric Compositions) -->
+      <div class="bg-skyLight/55 py-16 lg:py-24 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-14 reveal">
+            <div>
+              <p class="text-xs uppercase tracking-[0.22em] text-tealDeep/70 mb-2">Three Pathways of Care</p>
+              <h2 class="text-2xl sm:text-3xl text-tealDeep">Choose the support that fits <span class="editorial-accent text-charcoal">this season.</span></h2>
+            </div>
+            <p class="text-sm text-charcoal/70 max-w-xs">Psychiatric care is our foundation, complemented by aesthetics and coaching.</p>
+          </div>
+
+          <!-- Pathway 1: Mental Health (Dominant Editorial Feature) -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mb-20 reveal">
+            <div class="lg:col-span-7 relative group cursor-pointer" onclick="navigateTo('mental-health')">
+              <div class="overflow-hidden mask-horizon aspect-[16/10] shadow-[0_24px_60px_rgba(23,79,80,0.11)]">
+                <img
+                  src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?auto=format&fit=crop&w=1100&q=85"
+                  alt="Calm mental health consultation in a sunlit, welcoming setting"
+                  class="w-full h-full object-cover img-zoom"
+                  loading="lazy"
+                />
+              </div>
+              <span class="absolute top-6 left-6 bg-ivoryWarm/90 backdrop-blur px-4 py-1.5 rounded-full text-xs text-tealDeep">Primary Focus &middot; 01</span>
+            </div>
+            <div class="lg:col-span-5 lg:pl-8">
+              <h3 class="text-2xl text-tealDeep mb-3">Mental Health &amp; Psychiatry</h3>
+              <p class="text-sm leading-relaxed text-charcoal/80 mb-5">
+                Psychiatric evaluations, medication management, counseling, EMDR, and licensed Spravato® therapy for children, adolescents, and adults.
+              </p>
+              <div class="flex flex-wrap gap-4 items-center">
+                <button onclick="navigateTo('mental-health')" class="organic-link text-sm text-tealDeep font-medium">Explore Mental Health &rarr;</button>
+                <button onclick="navigateTo('spravato')" class="organic-link text-sm text-charcoal/75">Spravato® Therapy &rarr;</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pathway 2 & 3: Staggered Organic Pair (Aesthetics & Nurse Coaching) -->
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start reveal">
+            <!-- Pathway 2: Aesthetic Treatments (Arch Crop, Offset Left) -->
+            <div class="md:col-span-6 lg:col-span-5 lg:col-start-2 group cursor-pointer" onclick="navigateTo('aesthetics')">
+              <div class="overflow-hidden mask-arch-soft aspect-[4/5] shadow-[0_20px_50px_rgba(23,79,80,0.09)] mb-6">
+                <img
+                  src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=900&q=85"
+                  alt="Natural radiant skin and serene aesthetic care atmosphere"
+                  class="w-full h-full object-cover img-zoom"
+                  loading="lazy"
+                />
+              </div>
+              <p class="text-xs uppercase tracking-[0.2em] text-tealMuted mb-1.5">Pathway 02 &middot; AAFE Affiliated</p>
+              <h3 class="text-xl text-tealDeep mb-2">Aesthetic Treatments</h3>
+              <p class="text-sm text-charcoal/75 mb-3 max-w-sm">Medical-grade Botox, TMJ injection appointments, and non-surgical skin rejuvenation.</p>
+              <span class="organic-link text-sm text-tealDeep">View Aesthetics &rarr;</span>
+            </div>
+
+            <!-- Pathway 3: Nurse Coaching & Wellness (Petal Crop, Staggered Lower) -->
+            <div class="md:col-span-6 lg:col-span-5 md:mt-20 group cursor-pointer" onclick="navigateTo('wellness')">
+              <div class="overflow-hidden mask-petal aspect-square shadow-[0_20px_50px_rgba(23,79,80,0.09)] mb-6">
+                <img
+                  src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&w=900&q=85"
+                  alt="Peaceful holistic wellness lifestyle and mindful breathing"
+                  class="w-full h-full object-cover img-zoom"
+                  loading="lazy"
+                />
+              </div>
+              <p class="text-xs uppercase tracking-[0.2em] text-tealMuted mb-1.5">Pathway 03 &middot; Holistic Support</p>
+              <h3 class="text-xl text-tealDeep mb-2">Nurse Coaching &amp; Wellness</h3>
+              <p class="text-sm text-charcoal/75 mb-3 max-w-sm">Structured, client-centered nurse coaching and curated everyday wellness products.</p>
+              <span class="organic-link text-sm text-tealDeep">Explore Coaching &rarr;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wave Back to Warm Ivory -->
+      <svg class="w-full h-16 sm:h-24 text-skyLight/55 block -mt-1 rotate-180" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+        <path fill="currentColor" d="M0,48 C360,115 720,10 1080,72 C1260,102 1380,82 1440,64 L1440,120 L0,120 Z"/>
+      </svg>
+
+      <!-- 3. INTERACTIVE "FIND THE RIGHT CARE" NAVIGATOR (Navigation Only, Non-Diagnostic) -->
+      <div id="find-right-care" class="py-16 lg:py-24 relative radial-glow-sage">
+        <div class="max-w-6xl mx-auto px-5 sm:px-8 lg:px-12 reveal">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+            <div class="lg:col-span-5">
+              <p class="text-xs uppercase tracking-[0.22em] text-tealMuted mb-2">Interactive Guide</p>
+              <h2 class="text-2xl sm:text-3xl text-tealDeep mb-3">Find the Right Care</h2>
+              <p class="text-sm text-charcoal/75 leading-relaxed mb-6">
+                Select what brings you here today to jump directly to the right service information and booking option.
+              </p>
+              <p class="text-[11px] text-charcoal/55 italic">
+                Navigation guide only — does not provide medical advice, diagnosis, or eligibility determination.
+              </p>
+            </div>
+
+            <div class="lg:col-span-7">
+              <div class="flex flex-wrap gap-3 mb-7" role="tablist" aria-label="Care goals">
+                <button onclick="selectCarePath('psychiatry')" data-care="psychiatry" class="care-pill px-5 py-2.5 rounded-full text-sm transition bg-tealDeep text-ivoryWarm">
+                  Mental Health &amp; Medication
+                </button>
+                <button onclick="selectCarePath('counseling')" data-care="counseling" class="care-pill px-5 py-2.5 rounded-full text-sm transition bg-sageSoft/35 text-tealDeep hover:bg-sageSoft/60">
+                  Counseling &amp; EMDR
+                </button>
+                <button onclick="selectCarePath('spravato')" data-care="spravato" class="care-pill px-5 py-2.5 rounded-full text-sm transition bg-sageSoft/35 text-tealDeep hover:bg-sageSoft/60">
+                  Spravato® Consultation
+                </button>
+                <button onclick="selectCarePath('aesthetics')" data-care="aesthetics" class="care-pill px-5 py-2.5 rounded-full text-sm transition bg-sageSoft/35 text-tealDeep hover:bg-sageSoft/60">
+                  Botox or TMJ Relief
+                </button>
+                <button onclick="selectCarePath('coaching')" data-care="coaching" class="care-pill px-5 py-2.5 rounded-full text-sm transition bg-sageSoft/35 text-tealDeep hover:bg-sageSoft/60">
+                  Nurse Coaching &amp; Shop
+                </button>
+                <button onclick="selectCarePath('student')" data-care="student" class="care-pill px-5 py-2.5 rounded-full text-sm transition bg-sageSoft/35 text-tealDeep hover:bg-sageSoft/60">
+                  Student Preceptorship
+                </button>
+              </div>
+
+              <!-- Organic Dynamic Result Area -->
+              <div id="care-result" class="bg-ivoryWarm/90 rounded-[36px] p-7 sm:p-9 shadow-[0_20px_50px_rgba(23,79,80,0.07)] border border-tealDeep/10 transition-all duration-300">
+                <!-- Populated by JS -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. INTRODUCTION TO A'NUCARE & 5. FEATURED MENTAL HEALTHCARE SERVICES -->
+      <div class="py-16 lg:py-24 relative">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center reveal">
+            <!-- Custom Meaningful SVG Illustration: Mental Health Pathways -->
+            <div class="lg:col-span-6">
+              <div class="relative p-4 sm:p-8">
+                <svg viewBox="0 0 520 420" class="w-full h-auto" fill="none" role="img" aria-label="Organic pathway illustration showing psychiatric assessment, medication management, counseling and EMDR working together">
+                  <defs>
+                    <linearGradient id="pathGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#D6E7EC"/>
+                      <stop offset="100%" stop-color="#BECDB8"/>
+                    </linearGradient>
+                  </defs>
+                  <!-- Soft Organic Backdrop -->
+                  <path d="M88,225 C65,120 155,48 275,62 C395,76 472,155 448,262 C424,369 298,392 190,368 C110,350 105,305 88,225 Z" fill="url(#pathGrad1)" opacity="0.5"/>
+                  <!-- Flowing Connecting River Lines -->
+                  <path d="M90,210 C175,115 245,115 310,165 C375,215 415,155 455,120" stroke="#174F50" stroke-width="1.5" stroke-dasharray="5 5" opacity="0.6"/>
+                  <path d="M90,210 C170,295 255,310 340,260 C395,228 430,270 460,295" stroke="#79A7A0" stroke-width="1.8"/>
+                  <path d="M90,210 L430,210" stroke="#174F50" stroke-width="1.5"/>
+
+                  <!-- Node 1: You -->
+                  <circle cx="90" cy="210" r="34" fill="#174F50"/>
+                  <text x="90" y="206" text-anchor="middle" fill="#F5F1E8" font-family="Manrope" font-size="11" font-weight="500">WHERE</text>
+                  <text x="90" y="221" text-anchor="middle" fill="#BECDB8" font-family="Cormorant Garamond" font-style="italic" font-size="14">you are</text>
+
+                  <!-- Node 2: Psychiatric Care -->
+                  <circle cx="265" cy="136" r="10" fill="#174F50"/>
+                  <text x="265" y="108" text-anchor="middle" fill="#174F50" font-family="Manrope" font-size="12" font-weight="500">Psychiatric Evaluation</text>
+                  <text x="265" y="123" text-anchor="middle" fill="#303B3A" font-family="Manrope" font-size="10.5" opacity="0.75">&amp; Medication Management</text>
+
+                  <!-- Node 3: Counseling & EMDR -->
+                  <circle cx="295" cy="210" r="10" fill="#79A7A0"/>
+                  <text x="295" y="191" text-anchor="middle" fill="#174F50" font-family="Manrope" font-size="12" font-weight="500">Counseling &amp; EMDR</text>
+
+                  <!-- Node 4: Spravato -->
+                  <circle cx="275" cy="292" r="10" fill="#174F50"/>
+                  <text x="275" y="318" text-anchor="middle" fill="#174F50" font-family="Manrope" font-size="12" font-weight="500">Spravato® Therapy</text>
+                  <text x="275" y="333" text-anchor="middle" fill="#303B3A" font-family="Manrope" font-size="10.5" opacity="0.75">Treatment-Resistant Depression</text>
+
+                  <!-- Destination: Whole-Person Support -->
+                  <circle cx="445" cy="210" r="38" fill="#F5F1E8" stroke="#174F50" stroke-width="1.4"/>
+                  <text x="445" y="206" text-anchor="middle" fill="#174F50" font-family="Cormorant Garamond" font-style="italic" font-size="15">Sustained</text>
+                  <text x="445" y="222" text-anchor="middle" fill="#303B3A" font-family="Manrope" font-size="10.5">Wellbeing</text>
+                </svg>
+              </div>
+            </div>
+
+            <div class="lg:col-span-6 lg:pl-6">
+              <p class="text-xs uppercase tracking-[0.22em] text-tealMuted mb-2">Rooted in Darlington Since 2021</p>
+              <h2 class="text-2xl sm:text-3xl text-tealDeep mb-4">
+                Treating the mind with the same clarity <span class="editorial-accent text-charcoal">and respect as the heart.</span>
+              </h2>
+              <p class="text-sm leading-relaxed text-charcoal/80 mb-6">
+                Founded by Dr. Karen Fulwood and Rob Fulwood, A'NuCare Wellness Center offers judgment-free psychiatric care and counseling for children, teens, and adults—addressing mood disorders, anxiety, ADHD, trauma, and thought disorders.
+              </p>
+              <div class="flex flex-wrap gap-2.5 mb-7">
+                <span class="px-4 py-1.5 rounded-full bg-skyLight/70 text-tealDeep text-xs">Depression &amp; Bipolar</span>
+                <span class="px-4 py-1.5 rounded-full bg-skyLight/70 text-tealDeep text-xs">Anxiety, OCD &amp; PTSD</span>
+                <span class="px-4 py-1.5 rounded-full bg-skyLight/70 text-tealDeep text-xs">ADHD &amp; Child Care</span>
+                <span class="px-4 py-1.5 rounded-full bg-skyLight/70 text-tealDeep text-xs">EMDR Therapy</span>
+              </div>
+              <button onclick="navigateTo('mental-health')" class="organic-link text-sm text-tealDeep font-medium">
+                See Full Psychiatric &amp; Counseling Scope &rarr;
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. SPRAVATO FEATURE (Deep Teal Immersive Organic Section) -->
+      <div class="relative">
+        <svg class="w-full h-16 sm:h-24 text-tealDeep block -mb-1" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+          <path fill="currentColor" d="M0,32 C420,120 880,-10 1440,76 L1440,120 L0,120 Z"/>
+        </svg>
+
+        <div class="wash-deep-organic text-ivoryWarm py-16 lg:py-24 relative overflow-hidden">
+          <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center reveal">
+              <div class="lg:col-span-6">
+                <p class="text-xs uppercase tracking-[0.22em] text-sageSoft mb-3">Licensed Spravato® Treatment Center</p>
+                <h2 class="text-2xl sm:text-3xl lg:text-[34px] text-ivoryWarm leading-snug mb-4">
+                  A structured, monitored option for <span class="editorial-accent text-skyLight">treatment-resistant depression.</span>
+                </h2>
+                <p class="text-sm leading-relaxed text-ivoryWarm/80 mb-6 max-w-lg">
+                  Spravato® (esketamine) nasal spray is administered in our dedicated Darlington treatment room under clinical supervision, beginning with a 30-minute consultation to assess candidacy and insurance coverage.
+                </p>
+                <div class="flex flex-wrap items-center gap-6">
+                  <button onclick="navigateTo('spravato')" class="bg-ivoryWarm text-tealDeep px-6 py-3 rounded-full text-sm hover:bg-skyLight transition">
+                    Learn About Spravato®
+                  </button>
+                  <span class="text-xs text-sageSoft/90">REMS-certified monitoring &middot; Individual results vary</span>
+                </div>
+              </div>
+
+              <div class="lg:col-span-6 relative">
+                <div class="grid grid-cols-12 gap-4 items-end">
+                  <div class="col-span-8 overflow-hidden mask-arch aspect-[4/5] shadow-[0_24px_60px_rgba(0,0,0,0.28)]">
+                    <img
+                      src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=900&q=85"
+                      alt="Serene, softly lit clinical environment representing calm monitored care"
+                      class="w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col-span-4 space-y-4 pb-6">
+                    <div class="bg-ivoryWarm/10 backdrop-blur-md rounded-[26px] p-4 border border-ivoryWarm/15">
+                      <p class="editorial-serif text-2xl text-skyLight">30 min</p>
+                      <p class="text-[11px] text-ivoryWarm/80 mt-1">Initial candidacy consultation</p>
+                    </div>
+                    <div class="bg-ivoryWarm/10 backdrop-blur-md rounded-[26px] p-4 border border-ivoryWarm/15">
+                      <p class="editorial-serif text-2xl text-sageSoft">2 hrs</p>
+                      <p class="text-[11px] text-ivoryWarm/80 mt-1">In-clinic post-dose observation</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <svg class="w-full h-16 sm:h-24 text-tealDeep block -mt-1 rotate-180" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+          <path fill="currentColor" d="M0,72 C360,12 960,118 1440,36 L1440,120 L0,120 Z"/>
+        </svg>
+      </div>
+
+      <!-- 7. PRACTITIONER INTRODUCTION (Editorial Portrait Composition — No Fictional Portraits) -->
+      <div class="py-16 lg:py-24">
+      <!-- 7. PRACTITIONER INTRODUCTION (Editorial Portrait Composition) -->
+      <div class="py-16 lg:py-24">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 reveal">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <!-- Hero Portrait Composition with Matching Arch Mask & Hover Zoom -->
+            <div class="lg:col-span-5">
+              <div class="relative max-w-sm mx-auto group">
+                <div class="overflow-hidden mask-arch shadow-[0_28px_70px_rgba(23,79,80,0.12)] aspect-[4/5] bg-skyLight">
+                  <img
+                    src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1000&q=85"
+                    alt="Dr. Karen Fulwood, Founder and CEO of A'NuCare Wellness Center"
+                    class="w-full h-full object-cover img-zoom"
+                    loading="lazy"
+                    onerror="this.src='https://placehold.co/800x1000/D6E7EC/174F50?text=Dr.+Karen+Fulwood'"
+                  />
+                </div>
+                <!-- Floating Editorial Credential Pill -->
+                <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 w-[88%] bg-ivoryWarm/92 backdrop-blur-md rounded-full px-5 py-3 shadow-[0_14px_34px_rgba(23,79,80,0.1)] border border-tealDeep/10 text-center">
+                  <p class="text-sm text-tealDeep font-medium">Dr. Karen Fulwood</p>
+                  <p class="text-[11px] text-charcoal/70">DNP, PMHNP-BC, FNP-BC &middot; Founder &amp; CEO</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:col-span-7">
+              <p class="text-xs uppercase tracking-[0.22em] text-tealMuted mb-2">Led by Clinical Depth</p>
+              <h2 class="text-2xl sm:text-3xl text-tealDeep mb-4">
+                “I will meet you where you are and help navigate the path forward.”
+              </h2>
+              <p class="text-sm leading-relaxed text-charcoal/80 mb-6 max-w-xl">
+                Dr. Karen Fulwood holds a Doctorate of Nursing Practice from the University of Tennessee and dual board certifications as a Psychiatric-Mental Health and Family Nurse Practitioner. Alongside Patricia Montgomery, PMHNP-BC, Co-Founder Rob Fulwood, and Office Manager Allison Bruton, A'NuCare delivers personal, attentive care in Darlington.
+              </p>
+              <button onclick="navigateTo('about')" class="organic-link text-sm text-tealDeep font-medium">
+                Meet the A'NuCare Team &rarr;
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8. VISUAL PATIENT JOURNEY (Bespoke Illustrated 5-Step Flowing Path) -->
+      <div class="wash-ivory-to-sage py-16 lg:py-24 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 reveal">
+          <div class="text-center max-w-xl mx-auto mb-12">
+            <p class="text-xs uppercase tracking-[0.22em] text-tealDeep/70 mb-2">Your Visit, Simplified</p>
+            <h2 class="text-2xl sm:text-3xl text-tealDeep">Five calm steps from discovery <span class="editorial-accent text-charcoal">to care.</span></h2>
+          </div>
+
+          <!-- Responsive Flowing Journey Ribbon -->
+          <div class="relative">
+            <!-- Connecting Organic SVG Line (Desktop) -->
+            <svg class="hidden lg:block absolute top-11 left-0 w-full h-16 pointer-events-none" viewBox="0 0 1200 80" fill="none" preserveAspectRatio="none" aria-hidden="true">
+              <path d="M80,40 C220,5 360,75 500,40 C640,5 780,75 920,40 C1020,15 1080,45 1120,40" stroke="#174F50" stroke-width="1.3" stroke-dasharray="5 6" opacity="0.45"/>
+            </svg>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 relative z-10">
+              <div class="text-center px-3">
+                <div class="w-16 h-16 mx-auto rounded-full bg-ivoryWarm flex items-center justify-center text-tealDeep shadow-sm mb-4 editorial-serif text-2xl">01</div>
+                <h3 class="text-sm font-medium text-tealDeep mb-1">Discover Care</h3>
+                <p class="text-xs text-charcoal/75">Explore psychiatry, Spravato®, aesthetics, or coaching.</p>
+              </div>
+              <div class="text-center px-3 lg:mt-6">
+                <div class="w-16 h-16 mx-auto rounded-full bg-ivoryWarm flex items-center justify-center text-tealDeep shadow-sm mb-4 editorial-serif text-2xl">02</div>
+                <h3 class="text-sm font-medium text-tealDeep mb-1">Match Your Need</h3>
+                <p class="text-xs text-charcoal/75">Use our guide to pinpoint the right appointment type.</p>
+              </div>
+              <div class="text-center px-3">
+                <div class="w-16 h-16 mx-auto rounded-full bg-ivoryWarm flex items-center justify-center text-tealDeep shadow-sm mb-4 editorial-serif text-2xl">03</div>
+                <h3 class="text-sm font-medium text-tealDeep mb-1">Connect</h3>
+                <p class="text-xs text-charcoal/75">Book via SonderMind or call our Darlington office.</p>
+              </div>
+              <div class="text-center px-3 lg:mt-6">
+                <div class="w-16 h-16 mx-auto rounded-full bg-ivoryWarm flex items-center justify-center text-tealDeep shadow-sm mb-4 editorial-serif text-2xl">04</div>
+                <h3 class="text-sm font-medium text-tealDeep mb-1">Verify &amp; Prepare</h3>
+                <p class="text-xs text-charcoal/75">Confirm your insurance benefits and visit notes.</p>
+              </div>
+              <div class="text-center px-3">
+                <div class="w-16 h-16 mx-auto rounded-full bg-tealDeep flex items-center justify-center text-ivoryWarm shadow-sm mb-4 editorial-serif text-2xl">05</div>
+                <h3 class="text-sm font-medium text-tealDeep mb-1">Begin Your Visit</h3>
+                <p class="text-xs text-charcoal/75">Meet in person on Cherry St. or via video session.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9. FACILITY & VISIT EXPERIENCE + 10. EDUCATIONAL RESOURCES & APPOINTMENT INVITATION -->
+      <div class="wash-sage-to-ivory py-16 lg:py-24">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 reveal">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center mb-20">
+            <div class="lg:col-span-5 order-2 lg:order-1">
+              <p class="text-xs uppercase tracking-[0.22em] text-tealDeep/70 mb-2">110 Cherry St. &middot; Darlington, SC</p>
+              <h2 class="text-2xl sm:text-3xl text-tealDeep mb-3">A welcoming space designed <span class="editorial-accent text-charcoal">to lower your shoulders.</span></h2>
+              <p class="text-sm text-charcoal/80 leading-relaxed mb-6">
+                Our Darlington center includes a calm welcome area, a family-friendly children's waiting space, and a private Spravato® treatment suite—plus telehealth options across South Carolina.
+              </p>
+              <div class="flex flex-wrap gap-5">
+                <button onclick="navigateTo('resources')" class="organic-link text-sm text-tealDeep font-medium">Insurance &amp; Preparation &rarr;</button>
+                <button onclick="navigateTo('contact')" class="organic-link text-sm text-charcoal/75">Directions &amp; Hours &rarr;</button>
+              </div>
+            </div>
+            <div class="lg:col-span-7 order-1 lg:order-2 grid grid-cols-12 gap-4 items-center">
+              <div class="col-span-7 overflow-hidden mask-horizon aspect-[4/3] shadow-[0_18px_45px_rgba(23,79,80,0.09)]">
+                <img
+                  src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=85"
+                  alt="Warm sunlit interior atmosphere with soft natural tones representing a comforting visit experience"
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div class="col-span-5 overflow-hidden mask-droplet aspect-[3/4] shadow-[0_18px_45px_rgba(23,79,80,0.09)]">
+                <img
+                  src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=700&q=85"
+                  alt="Soft green botanical leaves in natural daylight"
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Editorial Community & Clinical Education Strip -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center pt-10 border-t border-tealDeep/10">
+            <div>
+              <p class="text-xs uppercase tracking-[0.2em] text-tealMuted mb-2">Patient Guidance &amp; Clinical Mentorship</p>
+              <p class="text-lg text-tealDeep leading-relaxed">
+                Looking for insurance details, new-patient preparation, or PMHNP/PA student preceptorship?
+              </p>
+              <div class="mt-4 flex flex-wrap gap-6">
+                <button onclick="navigateTo('resources')" class="organic-link text-sm text-tealDeep">Patient Resources &rarr;</button>
+                <button onclick="navigateTo('preceptorship')" class="organic-link text-sm text-tealDeep">Student Preceptorship &rarr;</button>
+                <button onclick="navigateTo('shop')" class="organic-link text-sm text-tealDeep">Wellness Shop &rarr;</button>
+              </div>
+            </div>
+
+            <!-- Final Organic Appointment Invitation -->
+            <div class="bg-tealDeep text-ivoryWarm rounded-[44px] p-8 sm:p-10 relative overflow-hidden">
+              <div class="relative z-10">
+                <p class="editorial-accent text-xl text-skyLight mb-2">Ready when you are.</p>
+                <h3 class="text-2xl text-ivoryWarm mb-3">Begin your care with A'NuCare.</h3>
+                <p class="text-xs text-ivoryWarm/80 mb-6">In-person visits in Darlington, SC and telehealth options via SonderMind.</p>
+                <div class="flex flex-wrap gap-3">
+                  <button onclick="navigateTo('appointments')" class="bg-ivoryWarm text-tealDeep px-6 py-2.5 rounded-full text-sm hover:bg-skyLight transition">
+                    Open Appointment Hub
+                  </button>
+                  <a href="tel:+18439688120" class="border border-ivoryWarm/35 text-ivoryWarm px-5 py-2.5 rounded-full text-sm hover:bg-ivoryWarm/10 transition">
+                    (843) 968-8120
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ======================================================================
+         PAGE 02: ABOUT (History, Mission, Editorial Team Compositions)
+         ====================================================================== -->
+    <section id="page-about" class="page-view" aria-label="About A'NuCare">
+      <div class="radial-glow-sky pt-12 pb-20">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-6">
+              <p class="text-xs uppercase tracking-[0.22em] text-tealMuted mb-3">Our Story &middot; Founded 2021</p>
+              <h1 class="text-3xl sm:text-4xl text-tealDeep leading-tight mb-5">
+                Built on clinical excellence <span class="editorial-accent text-charcoal">and genuine human warmth.</span>
+              </h1>
+              <p class="text-sm leading-relaxed text-charcoal/80 mb-4">
+                A'NuCare Wellness Center, Inc. was founded in 2021 by Karen and Rob Fulwood to bring accessible, respectful psychiatric and wellness care to Darlington and surrounding South Carolina communities. In May 2023, the clinic celebrated the grand opening ribbon-cutting of its facility at 110 Cherry Street.
+              </p>
+              <p class="text-sm leading-relaxed text-charcoal/80 mb-6">
+                Our philosophy is straightforward: mental health care belongs in an open-minded, stigma-free setting where medication management, counseling, and holistic wellness work in partnership with every individual.
+              </p>
+              <div class="flex flex-wrap gap-5 items-center">
+                <a href="https://www.newsandpress.net/stand-anu-care/" target="_blank" rel="noopener noreferrer" class="organic-link text-sm text-tealDeep">
+                  Read Darlington Ribbon-Cutting Feature &nearr;
+                </a>
+                <button onclick="navigateTo('appointments')" class="bg-tealDeep text-ivoryWarm px-6 py-2.5 rounded-full text-sm hover:bg-charcoal transition">
+                  Schedule Care
+                </button>
+              </div>
+            </div>
+
+            <div class="lg:col-span-6 relative">
+              <div class="overflow-hidden mask-pebble aspect-[5/4] shadow-[0_24px_60px_rgba(23,79,80,0.1)]">
+                <img
+                  src="https://images.unsplash.com/photo-1527613426441-4da17471b66d?auto=format&fit=crop&w=1000&q=85"
+                  alt="Warm healthcare teamwork atmosphere representing collaborative patient care"
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Organic Team Presentation (No Fictional Portraits — Bespoke Editorial Compositions) -->
+      <div class="wash-ivory-to-sky py-20">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+          <div class="max-w-xl mb-14">
+            <p class="text-xs uppercase tracking-[0.22em] text-tealDeep/70 mb-2">Verified Leadership &amp; Clinical Team</p>
+            <h2 class="text-2xl sm:text-3xl text-tealDeep">The people behind <span class="editorial-accent text-charcoal">A'NuCare.</span></h2>
+          </div>
+
+          <!-- Dr. Karen Fulwood (Featured Asymmetric Layout) -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center mb-20">
+            <div class="lg:col-span-4">
+              <div class="mask-arch bg-tealDeep text-ivoryWarm p-8 aspect-[4/5] flex flex-col justify-between shadow-[0_22px_50px_rgba(23,79,80,0.18)]">
+                <span class="text-[11px] uppercase tracking-[0.2em] text-sageSoft">Founder &amp; CEO</span>
+                <div class="text-center">
+                  <p class="editorial-serif text-6xl italic text-skyLight">KF</p>
+                  <p class="mt-3 text-lg font-normal">Dr. Karen Fulwood</p>
+                  <p class="text-xs text-ivoryWarm/75">DNP, PMHNP-BC, FNP-BC</p>
+                </div>
+                <span class="text-[11px] text-center text-sageSoft/90">Psychiatric Nurse Practitioner</span>
+              </div>
+            </div>
+            <div class="lg:col-span-8 lg:pl-6">
+              <h3 class="text-2xl text-tealDeep mb-3">Dr. Karen Fulwood, DNP, PMHNP-BC, FNP-BC</h3>
+              <p class="text-sm leading-relaxed text-charcoal/80 mb-5">
+                With over 23 years in psychiatric care, Dr. Fulwood treats children, adolescents, and adults with a focus on collaborative psychiatric medication management and whole-person support. She describes herself as a lifelong learner committed to removing mental health stigma.
+              </p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-charcoal/80 pt-4 border-t border-tealDeep/15">
+                <div>
+                  <p class="font-medium text-tealDeep mb-1">Verified Academic Background</p>
+                  <ul class="space-y-1">
+                    <li>&middot; DNP, University of Tennessee</li>
+                    <li>&middot; Post-Master's Specialization in Psychiatry</li>
+                    <li>&middot; MSN (FNP), Georgia State University</li>
+                    <li>&middot; BSN, University of South Carolina</li>
+                    <li>&middot; BS in Biology, College of Charleston</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="font-medium text-tealDeep mb-1">Clinical Affiliations</p>
+                  <ul class="space-y-1">
+                    <li>&middot; Licensed Spravato® Treatment Center</li>
+                    <li>&middot; American Academy of Facial Esthetics (AAFE)</li>
+                    <li>&middot; SonderMind Psychiatric Provider (SC)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team Members Organic Asymmetric Trio -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="pt-6 border-t border-tealDeep/20">
+              <div class="w-16 h-16 rounded-full bg-ivoryWarm flex items-center justify-center editorial-serif text-2xl italic text-tealDeep mb-4 shadow-sm">PM</div>
+              <h3 class="text-lg text-tealDeep">Patricia Montgomery</h3>
+              <p class="text-xs uppercase tracking-wider text-tealMuted mb-2">PMHNP-BC &middot; Psychiatric Nurse Practitioner</p>
+              <p class="text-sm text-charcoal/75 leading-relaxed">Board-certified Psychiatric-Mental Health Nurse Practitioner supporting patients with comprehensive evaluations and medication care.</p>
+            </div>
+
+            <div class="pt-6 border-t border-tealDeep/20 md:mt-8">
+              <div class="w-16 h-16 rounded-full bg-ivoryWarm flex items-center justify-center editorial-serif text-2xl italic text-tealDeep mb-4 shadow-sm">RF</div>
+              <h3 class="text-lg text-tealDeep">Rob Fulwood</h3>
+              <p class="text-xs uppercase tracking-wider text-tealMuted mb-2">Co-Founder</p>
+              <p class="text-sm text-charcoal/75 leading-relaxed">Co-founded A'NuCare Wellness Center in 2021 alongside Dr. Karen Fulwood to build a lasting wellness resource for Darlington.</p>
+            </div>
+
+            <div class="pt-6 border-t border-tealDeep/20">
+              <div class="w-16 h-16 rounded-full bg-ivoryWarm flex items-center justify-center editorial-serif text-2xl italic text-tealDeep mb-4 shadow-sm">AB</div>
+              <h3 class="text-lg text-tealDeep">Allison Bruton</h3>
+              <p class="text-xs uppercase tracking-wider text-tealMuted mb-2">Office Manager</p>
+              <p class="text-sm text-charcoal/75 leading-relaxed">Guides scheduling, office coordination, and welcoming administrative support for new and returning patients.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         PAGE 03: MENTAL HEALTH SERVICES
+         ====================================================================== -->
+    <section id="page-mental-health" class="page-view" aria-label="Mental Health Services">
+      <div class="pt-12 pb-20 radial-glow-sky">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+            <div class="lg:col-span-6">
+              <p class="text-xs uppercase tracking-[0.22em] text-tealMuted mb-3">Psychiatry &amp; Counseling &middot; All Ages</p>
+              <h1 class="text-3xl sm:text-4xl text-tealDeep leading-tight mb-5">
+                Evidence-based mental health care, <span class="editorial-accent text-charcoal">tailored to your life.</span>
+              </h1>
+              <p class="text-sm leading-relaxed text-charcoal/80 mb-7 max-w-lg">
+                Whether you are seeking a thorough psychiatric evaluation, ongoing medication management, or trauma-informed counseling such as EMDR, we partner with children, adolescents, and adults at every stage.
+              </p>
+              <button onclick="navigateTo('appointments')" class="bg-tealDeep text-ivoryWarm px-7 py-3 rounded-full text-sm hover:bg-charcoal transition">
+                Schedule a Mental Health Visit
+              </button>
+            </div>
+            <div class="lg:col-span-6">
+              <div class="overflow-hidden mask-horizon aspect-[16/11] shadow-[0_24px_60px_rgba(23,79,80,0.1)]">
+                <img
+                  src="https://images.unsplash.com/photo-1573497491765-dccce02b29df?auto=format&fit=crop&w=1000&q=85"
+                  alt="Attentive, compassionate mental health session in natural light"
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Core Modalities (Fluid Editorial Bands) -->
+      <div class="py-16 bg-ivoryWarm">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 space-y-20">
+          <!-- Modality 1 -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+            <div class="lg:col-span-5 overflow-hidden mask-arch-soft aspect-[4/3]">
+              <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=85" alt="Clinician reviewing personalized care notes" class="w-full h-full object-cover" loading="lazy"/>
+            </div>
+            <div class="lg:col-span-7 lg:pl-6">
+              <p class="text-xs uppercase tracking-[0.2em] text-tealMuted mb-2">01 &middot; Psychiatric Care</p>
+              <h2 class="text-2xl text-tealDeep mb-3">Psychiatric Assessments &amp; Medication Management</h2>
+              <p class="text-sm leading-relaxed text-charcoal/80 max-w-xl">
+                Comprehensive diagnostic evaluations and careful, collaborative medication management—monitoring effectiveness, side effects, and personal goals over time. Available in person in Darlington and via telehealth across South Carolina.
+              </p>
+            </div>
+          </div>
+
+          <!-- Modality 2 -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+            <div class="lg:col-span-7 order-2 lg:order-1 lg:pr-6">
+              <p class="text-xs uppercase tracking-[0.2em] text-tealMuted mb-2">02 &middot; Psychotherapy</p>
+              <h2 class="text-2xl text-tealDeep mb-3">Counseling &amp; EMDR Therapy</h2>
+              <p class="text-sm leading-relaxed text-charcoal/80 max-w-xl">
+                Individual counseling utilizing multiple therapeutic modalities—including Eye Movement Desensitization and Reprocessing (EMDR), an evidence-based approach commonly used to help process PTSD and distressing life experiences.
+              </p>
+            </div>
+            <div class="lg:col-span-5 order-1 lg:order-2 overflow-hidden mask-petal aspect-[4/3]">
+              <img src="https://images.unsplash.com/photo-1516534775068-ba3e7458af70?auto=format&fit=crop&w=800&q=85" alt="Calm reflective setting for counseling and EMDR therapy" class="w-full h-full object-cover" loading="lazy"/>
+            </div>
+          </div>
+
+          <!-- Conditions Treated Organic Cloud -->
+          <div class="bg-skyLight/50 rounded-[48px] p-8 sm:p-12">
+            <div class="max-w-2xl mb-8">
+              <p class="text-xs uppercase tracking-[0.2em] text-tealDeep/70 mb-2">Clinical Scope</p>
+              <h2 class="text-2xl text-tealDeep">Conditions we support across all ages</h2>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-sm">
+              <div>
+                <h3 class="font-medium text-tealDeep mb-2">Mood Disorders</h3>
+                <p class="text-charcoal/75 text-xs leading-relaxed">Major depressive disorder, treatment-resistant depression, and bipolar disorder.</p>
+              </div>
+              <div>
+                <h3 class="font-medium text-tealDeep mb-2">Anxiety &amp; Trauma</h3>
+                <p class="text-charcoal/75 text-xs leading-relaxed">Generalized anxiety (GAD), PTSD, OCD, panic disorder, social anxiety, and separation anxiety.</p>
+              </div>
+              <div>
+                <h3 class="font-medium text-tealDeep mb-2">ADHD &amp; Youth Care</h3>
+                <p class="text-charcoal/75 text-xs leading-relaxed">Attention-Deficit/Hyperactivity Disorder, child and adolescent disorders including ODD and conduct disorder.</p>
+              </div>
+              <div>
+                <h3 class="font-medium text-tealDeep mb-2">Thought Disorders</h3>
+                <p class="text-charcoal/75 text-xs leading-relaxed">Schizophrenia, paranoia, and delusional thoughts managed with respectful clinical oversight.</p>
+              </div>
+              <div>
+                <h3 class="font-medium text-tealDeep mb-2">Personality Disorders</h3>
+                <p class="text-charcoal/75 text-xs leading-relaxed">Structured, long-term therapeutic and psychiatric support.</p>
+              </div>
+              <div class="flex items-end">
+                <button onclick="navigateTo('spravato')" class="organic-link text-tealDeep font-medium">Explore Spravato® for TRD &rarr;</button>
+              </div>
+            </div>
+            <p class="text-[11px] text-charcoal/60 mt-8 pt-4 border-t border-tealDeep/10">
+              Medical Disclaimer: Information on this website is educational and does not replace an individualized evaluation by a licensed clinician.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         PAGE 04: SPRAVATO® TREATMENT (Clinically Transparent & Visual)
+         ====================================================================== -->
+    <section id="page-spravato" class="page-view" aria-label="Spravato Treatment">
+      <div class="wash-deep-organic text-ivoryWarm pt-14 pb-20">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-6">
+              <p class="text-xs uppercase tracking-[0.22em] text-sageSoft mb-3">Licensed Spravato® Treatment Center &middot; Darlington, SC</p>
+              <h1 class="text-3xl sm:text-4xl text-ivoryWarm leading-tight mb-5">
+                Spravato® (esketamine) <span class="editorial-accent text-skyLight">under attentive clinical supervision.</span>
+              </h1>
+              <p class="text-sm text-ivoryWarm/80 leading-relaxed mb-7 max-w-lg">
+                FDA-approved prescription nasal spray used alongside an oral antidepressant for adults with treatment-resistant depression (TRD) or major depressive disorder with acute suicidal ideation or behavior, administered strictly within a certified clinic.
+              </p>
+              <button onclick="navigateTo('appointments')" class="bg-ivoryWarm text-tealDeep px-7 py-3 rounded-full text-sm hover:bg-skyLight transition">
+                Request a 30-Minute Consultation
+              </button>
+            </div>
+            <div class="lg:col-span-6">
+              <!-- Bespoke Illustrated REMS Monitoring Timeline -->
+              <div class="bg-ivoryWarm/10 backdrop-blur-md rounded-[40px] p-7 border border-ivoryWarm/15">
+                <p class="text-xs uppercase tracking-[0.2em] text-sageSoft mb-5">How a Spravato® Visit Works</p>
+                <div class="space-y-5">
+                  <div class="flex gap-4 items-start">
+                    <span class="w-8 h-8 rounded-full bg-skyLight text-tealDeep flex items-center justify-center text-xs font-medium shrink-0">1</span>
+                    <div>
+                      <p class="text-sm font-medium text-ivoryWarm">30-Minute Candidacy Consultation</p>
+                      <p class="text-xs text-ivoryWarm/75">Review treatment history, clinical eligibility, and insurance coverage verification.</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-4 items-start">
+                    <span class="w-8 h-8 rounded-full bg-sageSoft text-tealDeep flex items-center justify-center text-xs font-medium shrink-0">2</span>
+                    <div>
+                      <p class="text-sm font-medium text-ivoryWarm">In-Clinic Self-Administration</p>
+                      <p class="text-xs text-ivoryWarm/75">Administered in our private Darlington Spravato® room under clinician oversight.</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-4 items-start">
+                    <span class="w-8 h-8 rounded-full bg-ivoryWarm text-tealDeep flex items-center justify-center text-xs font-medium shrink-0">3</span>
+                    <div>
+                      <p class="text-sm font-medium text-ivoryWarm">Minimum 2-Hour Monitored Observation</p>
+                      <p class="text-xs text-ivoryWarm/75">Vital signs, blood pressure, and comfort are monitored until safe for discharge.</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-4 items-start">
+                    <span class="w-8 h-8 rounded-full bg-tealMuted text-ivoryWarm flex items-center justify-center text-xs font-medium shrink-0">4</span>
+                    <div>
+                      <p class="text-sm font-medium text-ivoryWarm">Arranged Ride Home</p>
+                      <p class="text-xs text-ivoryWarm/75">Patients may not drive or operate machinery until the next day after a restful sleep.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Safety, Risks, Insurance & FAQs -->
+      <div class="py-20 bg-ivoryWarm">
+        <div class="max-w-5xl mx-auto px-5 sm:px-8 space-y-14">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div>
+              <h2 class="text-xl text-tealDeep mb-3">Eligibility &amp; Safety Considerations</h2>
+              <p class="text-sm text-charcoal/80 leading-relaxed mb-3">
+                Spravato® is not appropriate for everyone. It is contraindicated in patients with aneurysmal vascular disease, arteriovenous malformation, history of intracerebral hemorrhage, or hypersensitivity to esketamine/ketamine.
+              </p>
+              <p class="text-sm text-charcoal/80 leading-relaxed">
+                Common temporary side effects include dissociation, dizziness, nausea, sedation, vertigo, increased blood pressure, and anxiety. Because of sedation and dissociation risks, Spravato® is available only through the FDA REMS program. Individual outcomes vary and results are never guaranteed.
+              </p>
+            </div>
+            <div>
+              <h2 class="text-xl text-tealDeep mb-3">Insurance &amp; Prior Authorization</h2>
+              <p class="text-sm text-charcoal/80 leading-relaxed mb-3">
+                Certain health insurance plans cover Spravato® when clinical criteria are met. Coverage, copays, and prior authorization requirements vary by plan.
+              </p>
+              <p class="text-sm text-charcoal/80 leading-relaxed">
+                Patients should verify their benefits with their insurer, and our office will discuss documentation steps during your 30-minute consultation.
+              </p>
+            </div>
+          </div>
+
+          <!-- Interactive FAQs -->
+          <div class="pt-8 border-t border-tealDeep/15">
+            <h2 class="text-xl text-tealDeep mb-6">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+              <details class="group bg-skyLight/40 rounded-[26px] px-6 py-4">
+                <summary class="cursor-pointer list-none flex items-center justify-between text-sm font-medium text-tealDeep">
+                  <span>Do I need a consultation before starting Spravato®?</span>
+                  <span class="text-tealMuted group-open:rotate-45 transition">+</span>
+                </summary>
+                <p class="mt-3 text-xs leading-relaxed text-charcoal/80">Yes. A'NuCare offers a 30-minute consultation to review your medical history, prior antidepressants, and determine whether you are an appropriate candidate.</p>
+              </details>
+              <details class="group bg-skyLight/40 rounded-[26px] px-6 py-4">
+                <summary class="cursor-pointer list-none flex items-center justify-between text-sm font-medium text-tealDeep">
+                  <span>Can I drive myself home after a session?</span>
+                  <span class="text-tealMuted group-open:rotate-45 transition">+</span>
+                </summary>
+                <p class="mt-3 text-xs leading-relaxed text-charcoal/80">No. For your safety under REMS guidelines, you must arrange transportation home and refrain from driving or operating heavy machinery until the following day after a full night's sleep.</p>
+              </details>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         PAGE 05: AESTHETIC SERVICES (Medically Credible & Serene)
+         ====================================================================== -->
+    <section id="page-aesthetics" class="page-view" aria-label="Aesthetic Services">
+      <div class="wash-ivory-to-sage pt-12 pb-20">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-5">
+              <p class="text-xs uppercase tracking-[0.22em] text-tealDeep/70 mb-3">AAFE Affiliated &middot; Medical Aesthetics</p>
+              <h1 class="text-3xl sm:text-4xl text-tealDeep leading-tight mb-4">
+                Subtle, clinician-guided <span class="editorial-accent text-charcoal">aesthetic &amp; TMJ care.</span>
+              </h1>
+              <p class="text-sm text-charcoal/80 leading-relaxed mb-6">
+                Delivered with medical precision by an American Academy of Facial Esthetics (AAFE) affiliated clinic—focusing on natural-looking skin rejuvenation, Botox, and therapeutic TMJ injections.
+              </p>
+              <button onclick="navigateTo('appointments')" class="bg-tealDeep text-ivoryWarm px-7 py-3 rounded-full text-sm hover:bg-charcoal transition">
+                Inquire or Book Aesthetics
+              </button>
+            </div>
+            <div class="lg:col-span-7 grid grid-cols-12 gap-4 items-center">
+              <div class="col-span-7 overflow-hidden mask-arch aspect-[4/5]">
+                <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=85" alt="Serene facial aesthetic care environment" class="w-full h-full object-cover" loading="lazy"/>
+              </div>
+              <div class="col-span-5 overflow-hidden mask-pebble aspect-square">
+                <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=700&q=85" alt="Minimalist skincare detail in soft daylight" class="w-full h-full object-cover" loading="lazy"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Verified Aesthetic Appointments -->
+      <div class="py-20 bg-ivoryWarm">
+        <div class="max-w-6xl mx-auto px-5 sm:px-8 lg:px-12">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+            <div class="bg-skyLight/35 rounded-[40px] p-8 sm:p-10">
+              <p class="text-xs uppercase tracking-[0.2em] text-tealMuted mb-2">1 Hour Appointment</p>
+              <h2 class="text-2xl text-tealDeep mb-3">Botox Appointment</h2>
+              <p class="text-sm text-charcoal/80 leading-relaxed mb-5">
+                Non-surgical injectable treatment targeting dynamic facial lines, preceded by an individualized facial anatomy assessment and discussion of goals, dosing, and aftercare.
+              </p>
+              <p class="text-xs text-charcoal/65">Pricing is individualized based on treatment areas and units; confirmed during consultation.</p>
+            </div>
+
+            <div class="bg-sageSoft/30 rounded-[40px] p-8 sm:p-10 md:mt-10">
+              <p class="text-xs uppercase tracking-[0.2em] text-tealMuted mb-2">1 Hour Appointment</p>
+              <h2 class="text-2xl text-tealDeep mb-3">TMJ Injection Treatment Appointment</h2>
+              <p class="text-sm text-charcoal/80 leading-relaxed mb-5">
+                Targeted injectable evaluation and treatment designed to help relax overworked jaw muscles associated with temporomandibular joint (TMJ) tension.
+              </p>
+              <p class="text-xs text-charcoal/65">Requires clinical evaluation to confirm candidacy. Aesthetic and TMJ services are typically self-pay.</p>
+            </div>
+          </div>
+
+          <div class="max-w-3xl text-xs text-charcoal/70 leading-relaxed pt-8 border-t border-tealDeep/10">
+            <strong class="font-medium text-tealDeep">Safety &amp; Transparency:</strong> Potential side effects of botulinum toxin injections include temporary localized swelling, bruising, redness, tenderness, headache, or unintended muscle weakness. Not recommended during pregnancy or breastfeeding, or for certain neuromuscular conditions. Results are temporary and vary by individual.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         PAGE 06: NURSE COACHING & WELLNESS
+         ====================================================================== -->
+    <section id="page-wellness" class="page-view" aria-label="Nurse Coaching and Wellness">
+      <div class="py-14 radial-glow-sage">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-6 order-2 lg:order-1">
+              <div class="overflow-hidden mask-petal aspect-[5/4] shadow-[0_24px_60px_rgba(23,79,80,0.09)]">
+                <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1000&q=85" alt="Peaceful outdoor wellness and mindful balance" class="w-full h-full object-cover" loading="lazy"/>
+              </div>
+            </div>
+            <div class="lg:col-span-6 order-1 lg:order-2">
+              <p class="text-xs uppercase tracking-[0.22em] text-tealMuted mb-3">Client-Centered Wellness</p>
+              <h1 class="text-3xl sm:text-4xl text-tealDeep leading-tight mb-5">
+                Nurse Coaching for <span class="editorial-accent text-charcoal">sustainable daily habits.</span>
+              </h1>
+              <p class="text-sm text-charcoal/80 leading-relaxed mb-6">
+                Nurse coaching is a structured, client-centered partnership that helps you clarify personal health goals, navigate lifestyle transitions, and build practical routines around sleep, stress management, nutrition, and energy.
+              </p>
+              <div class="flex flex-wrap gap-5 items-center">
+                <button onclick="navigateTo('contact')" class="bg-tealDeep text-ivoryWarm px-6 py-3 rounded-full text-sm hover:bg-charcoal transition">
+                  Inquire About Coaching
+                </button>
+                <button onclick="navigateTo('shop')" class="organic-link text-sm text-tealDeep">
+                  Visit Wellness Shop &rarr;
+                </button>
+              </div>
+              <p class="text-[11px] text-charcoal/60 mt-8">
+                Note: General wellness coaching and supplements support everyday wellbeing and are distinct from clinical psychiatric diagnosis or medical treatment.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         PAGE 07: PATIENT RESOURCES (Insurance, Prep, Privacy, Crisis)
+         ====================================================================== -->
+    <section id="page-resources" class="page-view" aria-label="Patient Resources">
+      <div class="wash-ivory-to-sky py-16">
+        <div class="max-w-6xl mx-auto px-5 sm:px-8 lg:px-12">
+          <div class="max-w-2xl mb-14">
+            <p class="text-xs uppercase tracking-[0.22em] text-tealDeep/70 mb-2">Patient Resources &amp; Insurance</p>
+            <h1 class="text-3xl sm:text-4xl text-tealDeep mb-4">Everything you need <span class="editorial-accent text-charcoal">before your visit.</span></h1>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 mb-16">
+            <!-- Insurance & Payment -->
+            <div class="lg:col-span-7 bg-ivoryWarm/90 rounded-[40px] p-8 sm:p-10 shadow-sm">
+              <h2 class="text-xl text-tealDeep mb-3">Insurance &amp; Payment Information</h2>
+              <p class="text-sm text-charcoal/80 leading-relaxed mb-4">
+                A'NuCare Wellness Center bills health insurance for eligible mental health services and accepts many commercial plans, Medicare, and Medicaid. Self-pay options are also available.
+              </p>
+              <p class="text-sm text-charcoal/80 leading-relaxed mb-5">
+                Because benefits, deductibles, copays, and specialty approvals (such as Spravato®) vary by plan and service, we cannot guarantee coverage. Please contact your insurance provider or call our office at <a href="tel:+18439688120" class="text-tealDeep underline">(843) 968-8120</a> to verify your plan prior to your visit.
+              </p>
+              <p class="text-xs text-charcoal/65">Cosmetic aesthetic treatments (Botox) are typically self-pay.</p>
+            </div>
+
+            <!-- Appointment Preparation -->
+            <div class="lg:col-span-5 bg-tealDeep text-ivoryWarm rounded-[40px] p-8 sm:p-10">
+              <h2 class="text-xl text-ivoryWarm mb-4">Preparing for Your Visit</h2>
+              <ul class="space-y-3 text-sm text-ivoryWarm/85">
+                <li>&middot; Photo ID and current health insurance card(s)</li>
+                <li>&middot; List of current medications &amp; dosages</li>
+                <li>&middot; Past psychiatric or medical summaries if available</li>
+                <li>&middot; Questions or goals you would like to discuss</li>
+              </ul>
+              <div class="mt-7 pt-5 border-t border-ivoryWarm/15">
+                <a href="https://www.sondermind.com/providers/v0ucajsw/karen-fulwood?utm_source=shared" target="_blank" rel="noopener noreferrer" class="organic-link text-sm text-skyLight">
+                  Access SonderMind Booking &amp; Portal &nearr;
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Privacy, HIPAA & Crisis Support -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="p-7 rounded-[32px] bg-ivoryWarm/80 border border-tealDeep/10">
+              <h3 class="text-base font-medium text-tealDeep mb-2">Privacy &amp; Patient Confidentiality</h3>
+              <p class="text-xs text-charcoal/75 leading-relaxed">
+                A'NuCare respects your health privacy in accordance with applicable HIPAA standards. Please do not submit sensitive medical details, diagnoses, or Protected Health Information (PHI) through general website forms or standard email. Request our Notice of Privacy Practices at our front desk or by calling (843) 968-8120.
+              </p>
+            </div>
+            <div class="p-7 rounded-[32px] bg-ivoryWarm/80 border border-tealDeep/10">
+              <h3 class="text-base font-medium text-tealDeep mb-2">Crisis &amp; Emergency Resources</h3>
+              <p class="text-xs text-charcoal/75 leading-relaxed mb-3">
+                This website is not monitored for medical emergencies. If you or someone you know is in immediate danger, call <strong>911</strong> or go to the nearest emergency room.
+              </p>
+              <a href="https://988lifeline.org/" target="_blank" rel="noopener noreferrer" class="organic-link text-xs font-medium text-tealDeep">
+                988 Suicide &amp; Crisis Lifeline (Call or Text 988) &nearr;
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         PAGE 08: SHOP (Verified Affiliate Wellness Storefronts)
+         ====================================================================== -->
+    <section id="page-shop" class="page-view" aria-label="Wellness Shop">
+      <div class="py-16 radial-glow-sage">
+        <div class="max-w-6xl mx-auto px-5 sm:px-8 lg:px-12">
+          <div class="max-w-2xl mb-14">
+            <p class="text-xs uppercase tracking-[0.22em] text-tealMuted mb-2">Curated Wellness Products</p>
+            <h1 class="text-3xl sm:text-4xl text-tealDeep mb-4">Everyday nutritional <span class="editorial-accent text-charcoal">supplements.</span></h1>
+            <p class="text-sm text-charcoal/75">
+              Explore our partnered wellness storefronts. Orders are fulfilled directly through each brand's official portal.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+            <!-- USANA -->
+            <div class="group">
+              <div class="overflow-hidden mask-horizon aspect-[16/10] mb-6 shadow-[0_18px_45px_rgba(23,79,80,0.08)]">
+                <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=900&q=85" alt="Natural wellness supplement bottles in soft warm lighting" class="w-full h-full object-cover img-zoom" loading="lazy"/>
+              </div>
+              <h2 class="text-2xl text-tealDeep mb-2">USANA Health Sciences</h2>
+              <p class="text-sm text-charcoal/75 mb-5">Daily nutritional supplements and cellular wellness products ordered through Dr. Karen Fulwood's USANA storefront.</p>
+              <div class="flex flex-wrap gap-5 items-center">
+                <a href="https://drkarenfulwood.usana.com/ux/dotcom/enu-US/home" target="_blank" rel="noopener noreferrer" class="bg-tealDeep text-ivoryWarm px-6 py-2.5 rounded-full text-sm hover:bg-charcoal transition">
+                  Order USANA &nearr;
+                </a>
+                <a href="https://drkarenfulwood.usana.com/ux/dotcom/enu-US/home" target="_blank" rel="noopener noreferrer" class="organic-link text-xs text-tealDeep">
+                  Affiliate Enrollment &nearr;
+                </a>
+              </div>
+            </div>
+
+            <!-- Frequense -->
+            <div class="group md:mt-10">
+              <div class="overflow-hidden mask-arch-soft aspect-[16/10] mb-6 shadow-[0_18px_45px_rgba(23,79,80,0.08)]">
+                <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=900&q=85" alt="Fresh botanical wellness ingredients and natural daily support" class="w-full h-full object-cover img-zoom" loading="lazy"/>
+              </div>
+              <h2 class="text-2xl text-tealDeep mb-2">Frequense</h2>
+              <p class="text-sm text-charcoal/75 mb-5">Botanical and nutritional formulations available through our partnered Frequense shop link.</p>
+              <div class="flex flex-wrap gap-5 items-center">
+                <a href="https://frequense.com/585361/shop" target="_blank" rel="noopener noreferrer" class="bg-tealDeep text-ivoryWarm px-6 py-2.5 rounded-full text-sm hover:bg-charcoal transition">
+                  Order Frequense &nearr;
+                </a>
+                <a href="https://frequense.com/585361/enrollment/step-2" target="_blank" rel="noopener noreferrer" class="organic-link text-xs text-tealDeep">
+                  Become an Affiliate &nearr;
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 rounded-[28px] bg-ivoryWarm/85 border border-tealDeep/10 text-xs text-charcoal/70 leading-relaxed">
+            <strong class="font-medium text-tealDeep">Affiliate &amp; Supplement Disclosure:</strong> A'NuCare Wellness Center and its founders maintain affiliate relationships with USANA and Frequense and may earn a commission on purchases made through these links. Dietary supplements are not intended to diagnose, treat, cure, or prevent any disease. Consult your healthcare provider before starting any new supplement, especially if you take prescription medications.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         PAGE 09: PRECEPTORSHIP (PMHNP & PA Students)
+         ====================================================================== -->
+    <section id="page-preceptorship" class="page-view" aria-label="Student Preceptorship">
+      <div class="py-16 radial-glow-sky">
+        <div class="max-w-6xl mx-auto px-5 sm:px-8 lg:px-12">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-6">
+              <p class="text-xs uppercase tracking-[0.22em] text-tealMuted mb-3">Clinical Education &amp; Mentorship</p>
+              <h1 class="text-3xl sm:text-4xl text-tealDeep leading-tight mb-5">
+                Preceptorship for <span class="editorial-accent text-charcoal">PMHNP &amp; PA students.</span>
+              </h1>
+              <p class="text-sm text-charcoal/80 leading-relaxed mb-6">
+                A'NuCare Wellness Center offers clinical preceptorship opportunities in Darlington, South Carolina for Psychiatric Nurse Practitioner (PMHNP) students and Physician Assistant (PA) students seeking hands-on outpatient mental health experience.
+              </p>
+              <div class="space-y-3 text-sm text-charcoal/80 mb-8">
+                <p>&middot; Exposure to lifespan psychiatric evaluations &amp; medication management</p>
+                <p>&middot; Observation of collaborative multidisciplinary care and Spravato® workflows</p>
+                <p>&middot; Mentorship grounded in 23+ years of psychiatric clinical practice</p>
+              </div>
+              <button onclick="navigateTo('contact', 'Preceptorship Inquiry')" class="bg-tealDeep text-ivoryWarm px-7 py-3 rounded-full text-sm hover:bg-charcoal transition">
+                Submit a Preceptorship Inquiry
+              </button>
+            </div>
+            <div class="lg:col-span-6">
+              <div class="overflow-hidden mask-pebble aspect-[5/4] shadow-[0_24px_60px_rgba(23,79,80,0.09)]">
+                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1000&q=85" alt="Clinical education mentorship discussion in a modern healthcare office" class="w-full h-full object-cover" loading="lazy"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         PAGE 10: CONTACT & VISIT US (Verified Info, Notary, Validated Form)
+         ====================================================================== -->
+    <section id="page-contact" class="page-view" aria-label="Contact and Visit Us">
+      <div class="py-16 wash-ivory-to-sky">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+
+            <!-- Verified Clinic Information -->
+            <div class="lg:col-span-5 space-y-8">
+              <div>
+                <p class="text-xs uppercase tracking-[0.22em] text-tealDeep/70 mb-2">Darlington, South Carolina</p>
+                <h1 class="text-3xl sm:text-4xl text-tealDeep mb-4">Visit or connect <span class="editorial-accent text-charcoal">with our office.</span></h1>
+              </div>
+
+              <div class="space-y-4 text-sm text-charcoal/85">
+                <div>
+                  <p class="text-xs uppercase tracking-widest text-tealMuted">Address</p>
+                  <p class="text-base text-tealDeep">110 Cherry St., Darlington, SC 29532</p>
+                  <a href="https://maps.google.com/?q=110+Cherry+St,+Darlington,+SC+29532" target="_blank" rel="noopener noreferrer" class="organic-link text-xs text-tealDeep mt-1">
+                    Open Directions in Google Maps &nearr;
+                  </a>
+                </div>
+
+                <div>
+                  <p class="text-xs uppercase tracking-widest text-tealMuted">Phone &amp; Fax</p>
+                  <p>Main Phone: <a href="tel:+18439688120" class="text-tealDeep underline">(843) 968-8120</a></p>
+                  <p class="text-xs text-charcoal/70">Additional Line: <a href="tel:+18439688071" class="underline">(843) 968-8071</a> &middot; Fax: (843) 968-8301</p>
+                </div>
+
+                <div>
+                  <p class="text-xs uppercase tracking-widest text-tealMuted">Email</p>
+                  <a href="mailto:anucarewellnesscenter@gmail.com" class="text-tealDeep underline">anucarewellnesscenter@gmail.com</a>
+                </div>
+
+                <div>
+                  <p class="text-xs uppercase tracking-widest text-tealMuted">Listed Office Hours</p>
+                  <p>Mondays: 8:00 AM – 12:30 PM</p>
+                  <p>Fridays: 12:30 PM – 5:00 PM</p>
+                  <p class="text-xs text-charcoal/65 mt-1">Additional video &amp; scheduled appointments available via SonderMind.</p>
+                </div>
+              </div>
+
+              <!-- Additional Administrative Service: Notary -->
+              <div class="bg-ivoryWarm/85 rounded-[28px] p-6 border border-tealDeep/10">
+                <p class="text-xs uppercase tracking-[0.2em] text-tealMuted mb-1">Additional Office Service</p>
+                <h2 class="text-base font-medium text-tealDeep mb-1">Notary Services</h2>
+                <p class="text-xs text-charcoal/75">Notary services are available at our Darlington office. Please call (843) 968-8120 to confirm notary availability before arriving.</p>
+              </div>
+            </div>
+
+            <!-- Functional General Inquiry Form (Non-PHI Safe) -->
+            <div class="lg:col-span-7 bg-ivoryWarm rounded-[44px] p-8 sm:p-11 shadow-[0_24px_60px_rgba(23,79,80,0.08)] border border-tealDeep/10">
+              <h2 class="text-2xl text-tealDeep mb-2">Send a General Message</h2>
+              <p class="text-xs text-charcoal/70 mb-6">
+                For administrative questions, preceptorship inquiries, or scheduling guidance. <strong class="font-medium text-tealDeep">Please do not include sensitive medical details or Protected Health Information (PHI).</strong>
+              </p>
+
+              <form id="contact-form" novalidate class="space-y-5">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  <div>
+                    <label for="contact-name" class="block text-xs text-charcoal/80 mb-1.5">Full Name *</label>
+                    <input id="contact-name" name="name" type="text" required class="w-full rounded-full bg-skyLight/30 border border-tealDeep/15 px-5 py-3 text-sm focus:bg-ivoryWarm transition" placeholder="Your name" />
+                  </div>
+                  <div>
+                    <label for="contact-email" class="block text-xs text-charcoal/80 mb-1.5">Email Address *</label>
+                    <input id="contact-email" name="email" type="email" required class="w-full rounded-full bg-skyLight/30 border border-tealDeep/15 px-5 py-3 text-sm focus:bg-ivoryWarm transition" placeholder="you@example.com" />
+                  </div>
+                </div>
+
+                <div>
+                  <label for="contact-topic" class="block text-xs text-charcoal/80 mb-1.5">Topic</label>
+                  <select id="contact-topic" name="topic" class="w-full rounded-full bg-skyLight/30 border border-tealDeep/15 px-5 py-3 text-sm focus:bg-ivoryWarm transition">
+                    <option value="General Inquiry">General Inquiry</option>
+                    <option value="Mental Health & Psychiatry">Mental Health &amp; Psychiatry</option>
+                    <option value="Spravato Consultation">Spravato® Consultation</option>
+                    <option value="Aesthetics (Botox / TMJ)">Aesthetics (Botox / TMJ)</option>
+                    <option value="Nurse Coaching">Nurse Coaching</option>
+                    <option value="Preceptorship Inquiry">Preceptorship Inquiry</option>
+                    <option value="Notary Services">Notary Services</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="contact-message" class="block text-xs text-charcoal/80 mb-1.5">Message (No sensitive medical details) *</label>
+                  <textarea id="contact-message" name="message" rows="4" required class="w-full rounded-[26px] bg-skyLight/30 border border-tealDeep/15 px-5 py-3.5 text-sm focus:bg-ivoryWarm transition" placeholder="How can our office assist you?"></textarea>
+                </div>
+
+                <div class="flex flex-wrap items-center justify-between gap-4 pt-2">
+                  <button type="submit" class="bg-tealDeep text-ivoryWarm px-8 py-3 rounded-full text-sm hover:bg-charcoal transition">
+                    Send Message
+                  </button>
+                  <p class="text-[11px] text-charcoal/55">Or call directly: (843) 968-8120</p>
+                </div>
+
+                <div id="form-feedback" class="hidden rounded-[22px] p-4 text-sm" role="status" aria-live="polite"></div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         CENTRAL APPOINTMENT DESTINATION HUB
+         ====================================================================== -->
+    <section id="page-appointments" class="page-view" aria-label="Appointments Hub">
+      <div class="py-16 radial-glow-sky">
+        <div class="max-w-6xl mx-auto px-5 sm:px-8 lg:px-12">
+          <div class="max-w-2xl mb-14">
+            <p class="text-xs uppercase tracking-[0.22em] text-tealMuted mb-2">Central Appointment Hub</p>
+            <h1 class="text-3xl sm:text-4xl text-tealDeep mb-4">Choose how you would like <span class="editorial-accent text-charcoal">to schedule.</span></h1>
+            <p class="text-sm text-charcoal/75">
+              Connect directly with our verified online scheduling partner or reach our Darlington front desk for specialized consultations.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <!-- Mental Health & Psychiatry via SonderMind -->
+            <div class="bg-tealDeep text-ivoryWarm rounded-[40px] p-8 sm:p-10 flex flex-col justify-between">
+              <div>
+                <p class="text-xs uppercase tracking-[0.2em] text-sageSoft mb-2">New &amp; Existing Patients</p>
+                <h2 class="text-2xl text-ivoryWarm mb-3">Mental Health &amp; Psychiatry</h2>
+                <p class="text-sm text-ivoryWarm/80 leading-relaxed mb-6">
+                  Schedule in-person visits in Darlington or video sessions across South Carolina with Dr. Karen Fulwood through SonderMind. (Patients using Rula may also confirm current routing via SonderMind or by calling our office.)
+                </p>
+              </div>
+              <div class="flex flex-wrap gap-3">
+                <a href="https://www.sondermind.com/providers/v0ucajsw/karen-fulwood?utm_source=shared" target="_blank" rel="noopener noreferrer" class="bg-ivoryWarm text-tealDeep px-6 py-3 rounded-full text-sm hover:bg-skyLight transition">
+                  Book on SonderMind &nearr;
+                </a>
+                <a href="tel:+18439688120" class="border border-ivoryWarm/35 text-ivoryWarm px-5 py-3 rounded-full text-sm hover:bg-ivoryWarm/10 transition">
+                  Call (843) 968-8120
+                </a>
+              </div>
+            </div>
+
+            <!-- Spravato, Aesthetics & Coaching -->
+            <div class="space-y-6">
+              <div class="bg-skyLight/50 rounded-[34px] p-7">
+                <h3 class="text-lg text-tealDeep mb-1.5">Spravato® 30-Minute Consultation</h3>
+                <p class="text-xs text-charcoal/75 mb-4">Speak with our office to schedule your candidacy evaluation and discuss insurance verification.</p>
+                <div class="flex flex-wrap gap-4 items-center">
+                  <a href="tel:+18439688120" class="organic-link text-sm text-tealDeep font-medium">Call (843) 968-8120 &rarr;</a>
+                  <button onclick="navigateTo('contact', 'Spravato Consultation')" class="organic-link text-xs text-charcoal/75">Request Callback &rarr;</button>
+                </div>
+              </div>
+
+              <div class="bg-sageSoft/35 rounded-[34px] p-7">
+                <h3 class="text-lg text-tealDeep mb-1.5">Botox, TMJ &amp; Nurse Coaching</h3>
+                <p class="text-xs text-charcoal/75 mb-4">1-hour aesthetic appointments and structured nurse coaching sessions arranged directly with our Darlington office.</p>
+                <div class="flex flex-wrap gap-4 items-center">
+                  <button onclick="navigateTo('contact', 'Aesthetics (Botox / TMJ)')" class="organic-link text-sm text-tealDeep font-medium">Inquire Online &rarr;</button>
+                  <a href="tel:+18439688120" class="organic-link text-xs text-charcoal/75">Call Office &rarr;</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p class="text-xs text-charcoal/65 text-center">
+            For immediate emergencies, call <strong>911</strong>. For 24/7 confidential mental health crisis support, call or text <a href="https://988lifeline.org/" target="_blank" rel="noopener noreferrer" class="underline text-tealDeep">988</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       ORGANIC FLOWING FOOTER
+       ======================================================================== -->
+  <footer class="relative mt-10">
+    <svg class="w-full h-14 sm:h-20 text-tealDeep block -mb-1" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true">
+      <path fill="currentColor" d="M0,56 C420,0 980,108 1440,34 L1440,100 L0,100 Z"/>
+    </svg>
+
+    <div class="bg-tealDeep text-ivoryWarm pt-12 pb-14">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-ivoryWarm/15">
+          <!-- Brand Summary -->
+          <div class="md:col-span-4 space-y-4">
+            <p class="text-lg font-medium tracking-wide">A'NuCare Wellness Center, Inc.</p>
+            <p class="text-xs text-ivoryWarm/75 leading-relaxed max-w-xs">
+              Meeting you right where you are with compassionate mental health care, licensed Spravato® therapy, AAFE aesthetics, and nurse coaching in Darlington, SC.
+            </p>
+            <p class="text-xs text-sageSoft">
+              110 Cherry St., Darlington, SC 29532
+            </p>
+          </div>
+
+          <!-- Care Links -->
+          <div class="md:col-span-3 space-y-2 text-xs">
+            <p class="uppercase tracking-[0.2em] text-sageSoft mb-3">Care &amp; Services</p>
+            <button onclick="navigateTo('mental-health')" class="block text-ivoryWarm/80 hover:text-skyLight transition">Mental Health &amp; Psychiatry</button>
+            <button onclick="navigateTo('spravato')" class="block text-ivoryWarm/80 hover:text-skyLight transition">Spravato® Treatment</button>
+            <button onclick="navigateTo('aesthetics')" class="block text-ivoryWarm/80 hover:text-skyLight transition">Cosmetic Aesthetics</button>
+            <button onclick="navigateTo('wellness')" class="block text-ivoryWarm/80 hover:text-skyLight transition">Nurse Coaching &amp; Wellness</button>
+            <button onclick="navigateTo('shop')" class="block text-ivoryWarm/80 hover:text-skyLight transition">Wellness Shop</button>
+          </div>
+
+          <!-- Practice Links -->
+          <div class="md:col-span-2 space-y-2 text-xs">
+            <p class="uppercase tracking-[0.2em] text-sageSoft mb-3">Practice</p>
+            <button onclick="navigateTo('about')" class="block text-ivoryWarm/80 hover:text-skyLight transition">About &amp; Team</button>
+            <button onclick="navigateTo('resources')" class="block text-ivoryWarm/80 hover:text-skyLight transition">Patient Resources</button>
+            <button onclick="navigateTo('preceptorship')" class="block text-ivoryWarm/80 hover:text-skyLight transition">Preceptorship</button>
+            <button onclick="navigateTo('appointments')" class="block text-ivoryWarm/80 hover:text-skyLight transition">Appointments</button>
+            <button onclick="navigateTo('contact')" class="block text-ivoryWarm/80 hover:text-skyLight transition">Contact &amp; Visit</button>
+          </div>
+
+          <!-- Direct Contact -->
+          <div class="md:col-span-3 space-y-2 text-xs text-ivoryWarm/80">
+            <p class="uppercase tracking-[0.2em] text-sageSoft mb-3">Connect</p>
+            <p>Phone: <a href="tel:+18439688120" class="underline hover:text-skyLight">(843) 968-8120</a></p>
+            <p>Fax: (843) 968-8301</p>
+            <p><a href="mailto:anucarewellnesscenter@gmail.com" class="underline hover:text-skyLight">anucarewellnesscenter@gmail.com</a></p>
+            <p class="pt-2 text-ivoryWarm/65">Mon 8:00 AM–12:30 PM &middot; Fri 12:30–5:00 PM</p>
+          </div>
+        </div>
+
+        <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-ivoryWarm/65">
+          <p>&copy; 2026 A'NuCare Wellness Center, Inc. All rights reserved.</p>
+          <p>
+            Emergency? Call 911 &middot; Crisis Support: <a href="https://988lifeline.org/" target="_blank" rel="noopener noreferrer" class="underline hover:text-skyLight">988lifeline.org</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       INTERACTIVE NAVIGATION, FIND-THE-RIGHT-CARE & FORM LOGIC
+       ======================================================================== -->
+  <script>
+    // 1. Single-Page Multi-View Navigation with Smooth Scroll & Accessibility
+    const validPages = [
+      'home', 'about', 'mental-health', 'spravato', 'aesthetics',
+      'wellness', 'resources', 'shop', 'preceptorship', 'contact', 'appointments'
+    ];
+
+    function navigateTo(pageId, prefillTopic = null) {
+      if (!validPages.includes(pageId)) pageId = 'home';
+
+      // Hide all pages, show target
+      document.querySelectorAll('.page-view').forEach(section => {
+        section.classList.remove('active');
+      });
+      const target = document.getElementById('page-' + pageId);
+      if (target) {
+        target.classList.add('active');
+      }
+
+      // Highlight active nav item
+      document.querySelectorAll('.nav-item').forEach(btn => {
+        if (btn.dataset.page === pageId) {
+          btn.classList.add('text-tealDeep', 'font-medium');
+        } else {
+          btn.classList.remove('text-tealDeep', 'font-medium');
+        }
+      });
+
+      // Optional topic prefill for Contact form
+      if (pageId === 'contact' && prefillTopic) {
+        const select = document.getElementById('contact-topic');
+        if (select) select.value = prefillTopic;
+      }
+
+      // Update URL hash cleanly without reload
+      try {
+        history.replaceState(null, '', '#' + pageId);
+      } catch (e) {}
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      initScrollReveals();
+    }
+
+    // 2. Mobile Navigation Drawer
+    function toggleMobileMenu(forceState = null) {
+      const drawer = document.getElementById('mobile-drawer');
+      const btn = document.getElementById('mobile-menu-btn');
+      const isHidden = drawer.classList.contains('hidden');
+      const shouldOpen = forceState !== null ? forceState : isHidden;
+
+      if (shouldOpen) {
+        drawer.classList.remove('hidden');
+        btn.setAttribute('aria-expanded', 'true');
+      } else {
+        drawer.classList.add('hidden');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    }
+
+    // 3. Interactive "Find the Right Care" Feature (Navigation Only — Non-Diagnostic)
+    const careOptions = {
+      psychiatry: {
+        eyebrow: 'Psychiatric Care & Medication',
+        title: 'Mental Health & Psychiatric Evaluations',
+        text: 'Comprehensive psychiatric assessments and collaborative medication management for children, teens, and adults—in person in Darlington or via video.',
+        primaryLabel: 'Explore Mental Health',
+        primaryPage: 'mental-health',
+        secondaryLabel: 'Book on SonderMind',
+        secondaryHref: 'https://www.sondermind.com/providers/v0ucajsw/karen-fulwood?utm_source=shared'
+      },
+      counseling: {
+        eyebrow: 'Psychotherapy & Trauma Care',
+        title: 'Counseling & EMDR Therapy',
+        text: 'Individual counseling across multiple modalities, including EMDR to support individuals processing PTSD and challenging life events.',
+        primaryLabel: 'View Counseling Services',
+        primaryPage: 'mental-health',
+        secondaryLabel: 'Schedule Appointment',
+        secondaryPage: 'appointments'
+      },
+      spravato: {
+        eyebrow: 'Licensed Spravato® Center',
+        title: 'Spravato® Consultation & Treatment',
+        text: 'Learn about FDA-approved esketamine nasal spray for adults with treatment-resistant depression, beginning with a 30-minute consultation.',
+        primaryLabel: 'Spravato® Guide & Safety',
+        primaryPage: 'spravato',
+        secondaryLabel: 'Request Consultation',
+        secondaryPage: 'appointments'
+      },
+      aesthetics: {
+        eyebrow: 'AAFE Affiliated Aesthetics',
+        title: 'Botox & TMJ Injection Appointments',
+        text: '1-hour clinician-guided aesthetic and TMJ injection appointments in Darlington, preceded by an individualized consultation.',
+        primaryLabel: 'Explore Aesthetics',
+        primaryPage: 'aesthetics',
+        secondaryLabel: 'Inquire Now',
+        secondaryPage: 'contact'
+      },
+      coaching: {
+        eyebrow: 'Whole-Person Habits',
+        title: 'Nurse Coaching & Wellness Shop',
+        text: 'Structured, client-centered nurse coaching for everyday health goals, alongside our partnered USANA and Frequense supplement shops.',
+        primaryLabel: 'Nurse Coaching',
+        primaryPage: 'wellness',
+        secondaryLabel: 'Visit Wellness Shop',
+        secondaryPage: 'shop'
+      },
+      student: {
+        eyebrow: 'Clinical Mentorship',
+        title: 'PMHNP & PA Student Preceptorship',
+        text: 'Hands-on outpatient psychiatric clinical learning opportunities in Darlington, SC for graduate nursing and PA students.',
+        primaryLabel: 'Preceptorship Details',
+        primaryPage: 'preceptorship',
+        secondaryLabel: 'Send Inquiry',
+        secondaryPage: 'contact'
+      }
+    };
+
+    function selectCarePath(key) {
+      const data = careOptions[key] || careOptions.psychiatry;
+
+      // Update active pill styling
+      document.querySelectorAll('.care-pill').forEach(pill => {
+        if (pill.dataset.care === key) {
+          pill.className = 'care-pill px-5 py-2.5 rounded-full text-sm transition bg-tealDeep text-ivoryWarm';
+        } else {
+          pill.className = 'care-pill px-5 py-2.5 rounded-full text-sm transition bg-sageSoft/35 text-tealDeep hover:bg-sageSoft/60';
+        }
+      });
+
+      const container = document.getElementById('care-result');
+      if (!container) return;
+
+      const secondaryAction = data.secondaryHref
+        ? `<a href="${data.secondaryHref}" target="_blank" rel="noopener noreferrer" class="organic-link text-sm text-tealDeep">${data.secondaryLabel} &nearr;</a>`
+        : `<button onclick="navigateTo('${data.secondaryPage}')" class="organic-link text-sm text-tealDeep">${data.secondaryLabel} &rarr;</button>`;
+
+      container.innerHTML = `
+        <p class="text-[11px] uppercase tracking-[0.2em] text-tealMuted mb-2">${data.eyebrow}</p>
+        <h3 class="text-xl text-tealDeep mb-2.5">${data.title}</h3>
+        <p class="text-sm text-charcoal/80 leading-relaxed mb-6">${data.text}</p>
+        <div class="flex flex-wrap items-center gap-5">
+          <button onclick="navigateTo('${data.primaryPage}')" class="bg-tealDeep text-ivoryWarm px-6 py-2.5 rounded-full text-sm hover:bg-charcoal transition">
+            ${data.primaryLabel}
+          </button>
+          ${secondaryAction}
+        </div>
+      `;
+    }
+
+    // 4. Functional Contact Form Validation & Feedback
+    function initContactForm() {
+      const form = document.getElementById('contact-form');
+      const feedback = document.getElementById('form-feedback');
+      if (!form || !feedback) return;
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        const name = document.getElementById('contact-name').value.trim();
+        const email = document.getElementById('contact-email').value.trim();
+        const topic = document.getElementById('contact-topic').value;
+        const message = document.getElementById('contact-message').value.trim();
+
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!name || !emailPattern.test(email) || !message) {
+          feedback.className = 'rounded-[22px] p-4 text-sm bg-red-50 text-red-900 border border-red-200';
+          feedback.textContent = 'Please provide your name, a valid email address, and a brief general message.';
+          feedback.classList.remove('hidden');
+          return;
+        }
+
+        // Open pre-populated mailto as a reliable client-side handoff + display confirmation
+        const subject = encodeURIComponent(`[A'NuCare Website] ${topic} — ${name}`);
+        const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nTopic: ${topic}\n\nMessage:\n${message}`);
+        window.location.href = `mailto:anucarewellnesscenter@gmail.com?subject=${subject}&body=${body}`;
+
+        feedback.className = 'rounded-[22px] p-4 text-sm bg-sageSoft/45 text-tealDeep border border-tealDeep/15';
+        feedback.textContent = `Thank you, ${name}. Your inquiry has been prepared for anucarewellnesscenter@gmail.com. For immediate scheduling, call (843) 968-8120.`;
+        feedback.classList.remove('hidden');
+        form.reset();
+      });
+    }
+
+    // 5. Intersection Observer for Subtle Scroll Reveals
+    function initScrollReveals() {
+      const elements = document.querySelectorAll('.page-view.active .reveal');
+      if (!('IntersectionObserver' in window)) {
+        elements.forEach(el => el.classList.add('visible'));
+        return;
+      }
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+
+      elements.forEach(el => observer.observe(el));
+    }
+
+    // Initialize on Load
+    window.addEventListener('DOMContentLoaded', () => {
+      selectCarePath('psychiatry');
+      initContactForm();
+
+      const initialHash = window.location.hash.replace('#', '');
+      if (initialHash && validPages.includes(initialHash)) {
+        navigateTo(initialHash);
+      } else {
+        initScrollReveals();
+      }
+    });
+  </script>
+</body>
+</html>
